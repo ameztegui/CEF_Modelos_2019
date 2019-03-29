@@ -209,35 +209,3 @@ params:
       link:
         href: "http://twitter.com/zuck"
         text: "@zuck"
-comitee2:
-    - name: "Andrés Bravo-Oviedo"
-      photo: "/img/speaker.jpg"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit"
-      company: "CSIC - Museo de Ciencias Naturales"
-      link:
-        href: "http://twitter.com/zuck"
-        text: "@zuck"
-        
-    - name: "Cristina Vega"
-      photo: "/img/speaker.jpg"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit"
-      company: "Universitat de Lleida"
-      link:
-        href: "http://twitter.com/zuck"
-        text: "@zuck"
-        
-    - name: "Antoni Trasobares"
-      photo: "/img/speaker.jpg"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit"
-      company: "Centre de Ciència i Tecnologia de Catalunya"
-      link:
-        href: "http://twitter.com/zuck"
-        text: "@zuck"
-        
-    - name: "Assu Planas"
-      photo: "/img/speaker.jpg"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit"
-      company: "Centre de Ciència i Tecnologia de Catalunya"
-      link:
-        href: "http://twitter.com/zuck"
-        text: "@zuck"
