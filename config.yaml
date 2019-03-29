@@ -161,8 +161,8 @@ params:
 # The entire schedule
   comitee:
     - name: "Aitor Ameztegui"
-      photo: "/img/speaker.jpg"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+      photo: "/img/Aitor_Foto.jpg"
+      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, s"
       company: "Universitat de Lleida"
       link:
         href: "http://twitter.com/zuck"
@@ -170,7 +170,7 @@ params:
         
     - name: "Andrés Bravo-Oviedo"
       photo: "/img/speaker.jpg"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, s"
       company: "CSIC - Museo de Ciencias Naturales"
       link:
         href: "http://twitter.com/zuck"
@@ -178,7 +178,7 @@ params:
         
     - name: "Cristina Vega"
       photo: "/img/speaker.jpg"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, s"
       company: "Universitat de Lleida"
       link:
         href: "http://twitter.com/zuck"
@@ -186,7 +186,7 @@ params:
         
     - name: "Antoni Trasobares"
       photo: "/img/speaker.jpg"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, s"
       company: "Centre de Ciència i Tecnologia de Catalunya"
       link:
         href: "http://twitter.com/zuck"
@@ -194,7 +194,7 @@ params:
         
     - name: "Assu Planas"
       photo: "/img/speaker.jpg"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, s"
       company: "Centre de Ciència i Tecnologia de Catalunya"
       link:
         href: "http://twitter.com/zuck"
