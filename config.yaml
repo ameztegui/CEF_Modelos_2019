@@ -56,15 +56,16 @@ params:
 
   # List of Sponsors
   Sponsors:
-- name: "SECF"
-      logo: "/img/logo_secf.jpg"
-      url: "http://secforestales.org/"
-  - name: "CTFC"
+    - name: "CTFC"
       logo: "/img/logo_ctfc.jpg"
-      url: "http://ctfc.cat"
- - name: "UDL"
-      logo: "/img/logo_udl.png"
-      url: "http://udl.cat"
+      url: "https://ctfc.cat"
+    - name: "SECF"
+      logo: "/img/logo_secf.jpg"
+      url: "https://secforestales.org"
+
+    - name: "UdL"
+      logo: "/img/logo_udl.jpg"
+      url: "https://udl.cat"
 
   # List of Partners
   Partners:
