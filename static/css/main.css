@@ -469,39 +469,6 @@ nav {
   color: #999;
 }
 
-/* =============================================================================
-   COMITEE2 (cientifico)
-   ========================================================================== */
-.comitee2-item {
-  position: relative;
-  min-height: 60px;
-  padding-left: 100px;
-  margin-bottom: 20px;
-  border-bottom: 1px dashed #e7e7e7;
-}
-.comitee2-photo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 70px;
-  height: 70px;
-}
-.comitee2-title {
-  padding-top: 10px;
-  font-size: 4em;
-  margin-bottom: 1em;
-}
-.comitee2-name {
-  font-size: 24px;
-}
-.comitee2-item p {
-  font-size: 1.4em;
-}
-.comitee2-company {
-  font-size: 20px;
-  color: #999;
-}
 
 
 
