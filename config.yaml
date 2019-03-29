@@ -197,7 +197,7 @@ params:
     - name: "Antoni Trasobares"
       photo: "/img/speaker.jpg"
       bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, s"
-      company: "Centre de Ciència i Tecnologia de Catalunya"
+      company: "Centre de Ciència i Tecnologia Forestal de Catalunya"
       link:
         href: "http://twitter.com/zuck"
         text: "@zuck"
@@ -205,7 +205,7 @@ params:
     - name: "Assu Planas"
       photo: "/img/speaker.jpg"
       bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, s"
-      company: "Centre de Ciència i Tecnologia de Catalunya"
+      company: "Centre de Ciència i Tecnologia Forestal de Catalunya"
       link:
         href: "http://twitter.com/zuck"
         text: "@zuck"
