@@ -9,7 +9,9 @@
     <h1 class="logo-name">
       <a class="logo-link" href="#" title="{{ .name }}" itemprop="name">{{ .name }}</a>
     </h1>
-    <h2 class="tagline">{{ .date }}, {{ .venue }}, {{ .city }}</h2>
+	<h2 class="tagline">{{ .venue }}</h2>
+	<h2 class="tagline">{{ .city }}({{ .state }})</h2>
+    <h2 class="tagline2">{{ .date }}</h2>
 
     <div class="call-action-area">
       {{ with .price }}

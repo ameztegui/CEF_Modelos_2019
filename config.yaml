@@ -1,5 +1,5 @@
-baseurl: "https://example.org/"
-title: "Conference name"
+baseurl: "http://127.0.0.1:3857"
+title: "V Congreso Modelización Forestal"
 canonifyurls: true
 theme: "hugo-conference"
 
@@ -7,14 +7,14 @@ GoogleAnalytics: ""
 
 params:
   # Conference info
-  Name: "Conference name"
+  Name: "VI Reunión del Grupo de Modelización Forestal"
   Description: "Conference description"
-  Date: "November 15"
-  Price: "Only $100" # If your event is free, just comment this line
-  Venue: "Coco Bongo"
-  Address: "Boulevard Kukulcan, 30"
-  City:  "Cancún"
-  State: "Quintana"
+  Date: "7 y 8 de Noviembre de 2019"
+  #Price: "Only $100" # If your event is free, just comment this line
+  Venue: "Centre de Ciència i  Tecnologia Forestal de Catalunya (CTFC)"
+  Address: "Ctra. Sant Llorenç km.2\n Solsona (Lleida)"
+  City:  "Solsona"
+  State: "Lleida"
   Images: ["/img/badge.jpg"]
   GoogleMapsKey: "my-secret-maps-key"
 
@@ -23,31 +23,36 @@ params:
   Sections:
     - about
     - location
-    - speakers
     - schedule
-    - sponsors
-    - partners
+    - speakers
+    #- partners
+    - comitee
+    - inscription
     #- contact
+    - sponsors
+
 
   # Titles which you can translate to other languages
   Titles:
-    about: "About"
-    location: "Location"
-    speakers: "Speakers"
-    schedule: "Schedule"
-    sponsors: "Sponsors"
+    about: "La reunión"
+    location: "Sede"
+    speakers: "Ponentes"
+    schedule: "Programa"
+    sponsors: "Colaboradores"
     partners: "Partners"
-    contact: "Contact"
+    contact: "Contacto"
+    comitee: "Comité Organizador y Científico"
+    inscription: "Inscripción y documentación"
 
   # The Call To Action button at the header,
   # If you don't want this, just remove the callToAction property.
   CallToAction:
-    text: "Register now!"
+    text: "Inscríbete ya!"
     link: "http://register.example.com"
 
   # Fork me on GitHub, if you don't want this, just remove the forkButton property
-  ForkButton:
-    repository: "https://github.com/jweslley/hugo-conference/"
+#  ForkButton:
+#    repository: "https://github.com/jweslley/hugo-conference/"
 
   # List of Sponsors
   Sponsors:
@@ -68,11 +73,16 @@ params:
   Schedule:
     - name: "Check-in / Breakfast"
       time: "9h00"
+    
+    
+    - name: "Modelización de la Ecofisiología"
+      time: "9h30"
+      
 
-    - name: "Linus Torvalds"
+    - name: "Miquel de Cáceres"
+      company: "CTFC"
       photo: "/img/speaker.jpg"
       bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-      company: "Linux Foundation"
       link:
         href: "http://twitter.com/linus"
         text: "@linus"
@@ -146,3 +156,46 @@ params:
         title: "Why do I prefer Android over iPhone"
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
         time: "17h00"
+
+
+# The entire schedule
+  comitee:
+    - name: "Aitor Ameztegui"
+      photo: "/img/speaker.jpg"
+      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+      company: "Universitat de Lleida"
+      link:
+        href: "http://twitter.com/zuck"
+        text: "@zuck"
+        
+    - name: "Andrés Bravo-Oviedo"
+      photo: "/img/speaker.jpg"
+      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+      company: "CSIC - Museo de Ciencias Naturales"
+      link:
+        href: "http://twitter.com/zuck"
+        text: "@zuck"
+        
+    - name: "Cristina Vega"
+      photo: "/img/speaker.jpg"
+      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+      company: "Universitat de Lleida"
+      link:
+        href: "http://twitter.com/zuck"
+        text: "@zuck"
+        
+    - name: "Antoni Trasobares"
+      photo: "/img/speaker.jpg"
+      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+      company: "Centre de Ciència i Tecnologia de Catalunya"
+      link:
+        href: "http://twitter.com/zuck"
+        text: "@zuck"
+        
+    - name: "Assu Planas"
+      photo: "/img/speaker.jpg"
+      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+      company: "Centre de Ciència i Tecnologia de Catalunya"
+      link:
+        href: "http://twitter.com/zuck"
+        text: "@zuck"

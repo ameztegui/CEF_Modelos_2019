@@ -1,0 +1,25 @@
+<h2 class="section-title">{{ .titles.comitee }}</h2>
+
+<ul class="comitee-list">
+{{ range $comitee := (where .comitee "name" "ne" nil) }}
+  <li class="comitee-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+    {{ with .photo }}
+      <span class="comitee-photo">
+        <img class="photo" src="{{ . }}" alt="{{ $comitee.name }}" itemprop="image">
+      </span>
+    {{ end }}
+
+
+	<h3 class="comitee-name">
+        
+      <span>{{ .name }}</span>
+
+    </h3>
+    <h3 class="comitee-company">{{ .company }}
+    
+    </h3>
+
+    <p class="comitee-bio">{{ .bio }}</p>
+  </li>
+{{ end }}
+</ul>

@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Regression on My New Hugo Site</title>
+    <title>Regression on V Congreso Modelización Forestal</title>
     <link>/tags/regression/</link>
-    <description>Recent content in Regression on My New Hugo Site</description>
+    <description>Recent content in Regression on V Congreso Modelización Forestal</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
     <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
     
 	<atom:link href="/tags/regression/index.xml" rel="self" type="application/rss+xml" />

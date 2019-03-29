@@ -338,10 +338,17 @@ nav {
 }
 .logo-name {
   margin-bottom: 0;
-  font-size: 10em;
+  font-size: 7em;
   letter-spacing: -0.04em;
 }
 .tagline {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 3em;
+  letter-spacing: -0.02em;
+}
+.tagline2 {
+  margin-top: 20px;
   margin-bottom: 50px;
   font-size: 2em;
   letter-spacing: -0.02em;
@@ -400,8 +407,8 @@ nav {
   height: 120px;
 }
 .speech-title {
-  padding-top: 10px;
-  font-size: 2em;
+  padding-top: 2.5em;
+  font-size: 20px;
   margin-bottom: 1em;
 }
 .speech-time {
@@ -410,14 +417,59 @@ nav {
   letter-spacing: -0.03em;
 }
 .speakers-name {
-  font-size: 1.6em;
+  font-size: 24px;
+  padding-bottom: 0.5em;
 }
 .speakers-item p {
+  font-size: 1 em;
+}
+.speech-link {
+  font-size: 18px;
+}
+/* =============================================================================
+   COMITEE
+   ========================================================================== */
+.comitee-item {
+  position: relative;
+  min-height: 80px;
+  padding-left: 100px;
+  margin-bottom: 30px;
+  border-bottom: 1px dashed #e7e7e7;
+}
+.comitee-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 70px;
+  height: 70px;
+}
+.comitee-title {
+  padding-top: 10px;
+  font-size: 1.6em;
+  margin-bottom: 1em;
+}
+.comitee-name {
+  font-size: 24px;
+}
+.comitee-item p {
   font-size: 1.4em;
 }
+.comitee-company {
+  font-size: 20px;
+  color: #999;
+}
+
 /* =============================================================================
    SCHEDULE
    ========================================================================== */
+.schedule-title {
+  font-size: 20px;
+}
+.schedule-name {
+  font-size: 16px;
+  color: #999;
+}
 .schedule-tbl {
   padding: 20px;
 }
@@ -455,7 +507,7 @@ nav {
 }
 .speakers-company {
   display: block;
-  font-size: 12px;
+  font-size: 18px;
 }
 /* =============================================================================
    SPONSORS  and  PARTNERS
@@ -465,7 +517,7 @@ nav {
   display: inline-block;
   margin: 0 30px 30px 0;
 }
-.sponsor--link,
+.sponsor-link,
 .partner-link {
   display: block;
   width: 150px;
@@ -570,7 +622,7 @@ nav {
   .partner-item {
     margin: 0 5px 10px 0;
   }
-  .sponsor--link,
+  .sponsor-link,
   .partner-link {
     width: 95px;
     height: 95px;
@@ -597,9 +649,10 @@ nav {
     padding: 20px 0;
   }
   .logo-name {
-    font-size: 4em;
+    font-size: 36px;
   }
   .tagline {
+    margin-top: 15px;
     margin-bottom: 15px;
     font-size: 1.4em;
   }
@@ -671,7 +724,7 @@ nav {
   .partner-item {
     margin: 0 12px 15px 0;
   }
-  .sponsor--link,
+  .sponsor-link,
   .partner-link {
     width: 115px;
     height: 115px;
@@ -724,11 +777,15 @@ nav {
 }
 .logo-link,
 .tagline,
+.tagline2,
 .call-action-area .price {
   color: #fff;
   text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.3);
 }
 .tagline {
+  font-weight: normal;
+}
+.tagline2 {
   font-weight: normal;
 }
 .call-action-area .price {
@@ -803,6 +860,22 @@ nav {
   background: #2b2b2b;
   border-radius: 8px;
 }
+/* =============================================================================
+   COMITEE
+   ========================================================================== */
+.comitee-photo .photo {
+  border-radius: 50%;
+  box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.07);
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.comitee-item:hover .comitee-photo .photo {
+  box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
 /* =============================================================================
    SCHEDULE
    ========================================================================== */
