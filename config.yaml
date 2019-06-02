@@ -7,16 +7,16 @@ GoogleAnalytics: ""
 
 params:
   # Conference info
-  Name: "Conference name"
-  Description: "Conference description"
-  Date: "November 15"
-  Price: "Only $100" # If your event is free, just comment this line
-  Venue: "Coco Bongo"
-  Address: "Boulevard Kukulcan, 30"
-  City:  "CancÃºn"
-  State: "Quintana"
-  Images: ["/img/badge.jpg"]
-  GoogleMapsKey: "my-secret-maps-key"
+  #Name: "Conference name"
+  #Description: "Conference description"
+  #Date: "November 15"
+  #Price: "Only $100" # If your event is free, just comment this line
+  #Venue: "Coco Bongo"
+  #Address: "Boulevard Kukulcan, 30"
+  #City:  "CancÃºn"
+  #State: "Quintana"
+  #Images: ["/img/badge.jpg"]
+  #GoogleMapsKey: "my-secret-maps-key"
 
   # Active sections on the website to deactivate comment out with '#'
   # you can also change order here and it will reflect on page
@@ -74,7 +74,7 @@ params:
       url: "http://braziljs.org"
 
   # The entire schedule
-  Schedule:
+  ScheduleDay1:
     - name: "Bienvenida/Recepción de participantes"
       time: "8h30"
     - name: "Inauguración de las jornadas"
@@ -127,11 +127,21 @@ params:
         href: "https://twitter.com/rafacalama2"
         text: "@rafacalama2"
       presentation:
+        date: "06/11"
         title: "Título a definir"
         description: "Resumen a definir"
         time: "15h00"
-        
-        
+ 
+    - name: "Presentaciones orales"
+      time: "15h30" 
+
+    - name: "Pausa-café"
+      time: "17h00" 
+    - name: "Presentaciones breves/Sesión de posters"
+      time: "17h30" 
+      
+  ScheduleDay2:
+      
     - name: "Miquel de Caceres"
       company: "CTFC"
       photo: "img/FotoMiqueldeCaceres.jpeg"
@@ -142,6 +152,7 @@ params:
       presentation:
         title: "Digging into a Linux Kernel"
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+        date: "07/11"
         time: "10h00"
 
     - name: "Elsa Varela"

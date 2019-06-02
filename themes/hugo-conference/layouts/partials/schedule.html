@@ -1,19 +1,39 @@
 <h2 class="section-title">{{ .titles.schedule }}</h2>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+<ul class="schedule-tabs">
+  <li><a href="#" activate="day-2">Miércoles 6 de nov.</a></li>
+  <li><a href="#" activate="day-3">Jueves 7 de nov.</a></li>
+</ul>
+<script type="text/javascript">
+  var lists = document.querySelectorAll(".schedule-tabs li"), 
+      doSomething = function(evt) {
+          [].map.call(lists, function(elem) { 
+            elem.classList.remove('active');
+            var id = elem.children[0].getAttribute('activate');
+            document.getElementById(id).classList.add('hidden');
+          });
+          this.classList.add('active');
+          var id = this.children[0].getAttribute('activate');
+          document.getElementById(id).classList.remove('hidden');
+          evt.preventDefault();
+      };
+  [].map.call(lists, function(elem) {
+      elem.addEventListener('click', doSomething, false);
+  });
+</script>
 
-<div class="schedule-tbl">
+<div id="day-2" class="schedule-tbl hidden">
+  <h3>Miércoles 6 de noviembre</h3>
   <table>
     <thead>
       <tr>
         <th class="schedule-time">Hora</th>
         <th class="schedule-slot">Actividad</th>
-        <th class="schedule-description">DescripciÃ³n</th>
+        <th class="schedule-description">Descripción</th>
       </tr>
     </thead>
     <tbody>
-      {{ range $slot := .schedule }}
+      {{ range $slot := .scheduleday1 }}
         {{ if ne .presentation nil }}
           <tr>
             <td class="schedule-time">{{ .presentation.time }}</td>
@@ -24,11 +44,47 @@ tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
               </span>
             {{ end }}
 
-              {{ .presentation.title }}
-              </br>
-			  <span class="schedule-name">{{ .name }}</span>
+              {{ .name }}
             </td>
-            <td class="schedule-description">{{ .presentation.description }}</td>
+            <td class="schedule-description">{{ .presentation.title }}</td>
+          </tr>
+        {{ else }}
+          <tr class="schedule-other">
+            <td class="schedule-time">{{ .time }}</td>
+            <td class="schedule-slot">{{ .name }}</td>
+            <td class="schedule-description">-</td>
+          </tr>
+        {{ end }}
+      {{ end }}
+    </tbody>
+  </table>
+</div>
+<div id="day-3" class="schedule-tbl hidden">
+  <h3>Jueves, 7 de noviembre</h3>
+  <div class="schedule-location"><strong>Hotel Senac Ilha do Boi</strong></div>
+  <table>
+    <thead>
+      <tr>
+        <th class="schedule-time">Hora</th>
+        <th class="schedule-slot">Actividad</th>
+        <th class="schedule-description">Descripción</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range $slot := .scheduleday2 }}
+        {{ if ne .presentation nil }}
+          <tr>
+            <td class="schedule-time">{{ .presentation.time }}</td>
+            <td class="schedule-slot">
+            {{ with .photo }}
+              <span class="speaker-photo">
+                <img class="photo" src="{{ . }}" alt="{{ $slot.name }}">
+              </span>
+            {{ end }}
+
+              {{ .name }}
+            </td>
+            <td class="schedule-description">{{ .presentation.title }}</td>
           </tr>
         {{ else }}
           <tr class="schedule-other">

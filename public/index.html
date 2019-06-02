@@ -1,29 +1,25 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/Event">
 <head>
-  <title itemprop="name">Conference name</title>
+  <title itemprop="name"></title>
 
   <meta charset="utf-8">
-  <meta name="author" content="Conference name" />
-  <meta name="description" content="Conference description">
+  <meta name="author" content="" />
+  <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
   <meta name="generator" content="Hugo 0.55.6" />
   <meta property="og:title" content="Conference name" />
-<meta property="og:description" content="Conference description" />
+<meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="/" />
 
-<meta property="og:image" content="/img/badge.jpg" />
-
 <meta property="og:updated_time" content="2019-03-28T00:00:00&#43;00:00"/>
 
-  <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="/img/badge.jpg"/>
-
+  <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Conference name"/>
-<meta name="twitter:description" content="Conference description"/>
+<meta name="twitter:description" content=""/>
 
 
   <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
@@ -80,19 +76,20 @@
 <hr>
 
     
+  <a href="https://github.com/jweslley/hugo-conference/" class="github-link" target="_blank">
+    <img src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub">
+  </a>
+
 
 <header class="header">
   <div class="wrapper">
     <h1 class="logo-name">
-      <a class="logo-link" href="#" title="Conference name" itemprop="name">Conference name</a>
+      <a class="logo-link" href="#" title="" itemprop="name"></a>
     </h1>
-	<h2 class="tagline">Coco Bongo</h2>
-	<h2 class="tagline">CancÃºn(Quintana)</h2>
-    <h2 class="tagline2">November 15</h2>
+    
+    <h2 class="tagline"> - </h2>
 
     <div class="call-action-area">
-      
-        <span class="price">Only $100</span>
       
 
       
@@ -103,7 +100,6 @@
 </header>
 
 <hr>
-
 
     <div class="content" id="content">
       <div class="wrapper">
@@ -123,28 +119,48 @@
             <h2 class="section-title">Sede</h2>
 
 <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-  <span itemprop="streetAddress">Boulevard Kukulcan, 30. </span>
-  <span itemprop="addressLocality">CancÃºn</span>,
-  <span itemprop="addressRegion"> Quintana</span>
+  <span itemprop="streetAddress">. </span>
+  <span itemprop="addressLocality"></span>,
+  <span itemprop="addressRegion"> </span>
 </p>
 
-<div id="map-canvas" class="location-area" data-address="Boulevard Kukulcan, 30, CancÃºn - Quintana"></div>
+<div id="map-canvas" class="location-area" data-address=",  - "></div>
 
           </section>
         
           <section class="schedule" id="schedule">
             <h2 class="section-title">Programa</h2>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+<ul class="schedule-tabs">
+  <li><a href="#" activate="day-2">Mi�rcoles 6 de nov.</a></li>
+  <li><a href="#" activate="day-3">Jueves 7 de nov.</a></li>
+</ul>
+<script type="text/javascript">
+  var lists = document.querySelectorAll(".schedule-tabs li"), 
+      doSomething = function(evt) {
+          [].map.call(lists, function(elem) { 
+            elem.classList.remove('active');
+            var id = elem.children[0].getAttribute('activate');
+            document.getElementById(id).classList.add('hidden');
+          });
+          this.classList.add('active');
+          var id = this.children[0].getAttribute('activate');
+          document.getElementById(id).classList.remove('hidden');
+          evt.preventDefault();
+      };
+  [].map.call(lists, function(elem) {
+      elem.addEventListener('click', doSomething, false);
+  });
+</script>
 
-<div class="schedule-tbl">
+<div id="day-2" class="schedule-tbl hidden">
+  <h3>Mi�rcoles 6 de noviembre</h3>
   <table>
     <thead>
       <tr>
         <th class="schedule-time">Hora</th>
         <th class="schedule-slot">Actividad</th>
-        <th class="schedule-description">Descripción</th>
+        <th class="schedule-description">Descripci�n</th>
       </tr>
     </thead>
     <tbody>
@@ -175,11 +191,9 @@ tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
               </span>
             
 
-              Título a definir
-              </br>
-			  <span class="schedule-name">Felipe Bravo</span>
+              Felipe Bravo
             </td>
-            <td class="schedule-description">Resumen a venir</td>
+            <td class="schedule-description">Título a definir</td>
           </tr>
         
       
@@ -217,11 +231,9 @@ tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
               </span>
             
 
-              Digging into a Linux Kernel
-              </br>
-			  <span class="schedule-name">Nuria Aquilué</span>
+              Nuria Aquilué
             </td>
-            <td class="schedule-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</td>
+            <td class="schedule-description">Digging into a Linux Kernel</td>
           </tr>
         
       
@@ -259,13 +271,51 @@ tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
               </span>
             
 
-              Título a definir
-              </br>
-			  <span class="schedule-name">Rafael Calama</span>
+              Rafael Calama
             </td>
-            <td class="schedule-description">Resumen a definir</td>
+            <td class="schedule-description">Título a definir</td>
           </tr>
         
+      
+        
+          <tr class="schedule-other">
+            <td class="schedule-time">15h30</td>
+            <td class="schedule-slot">Presentaciones orales</td>
+            <td class="schedule-description">-</td>
+          </tr>
+        
+      
+        
+          <tr class="schedule-other">
+            <td class="schedule-time">17h00</td>
+            <td class="schedule-slot">Pausa-café</td>
+            <td class="schedule-description">-</td>
+          </tr>
+        
+      
+        
+          <tr class="schedule-other">
+            <td class="schedule-time">17h30</td>
+            <td class="schedule-slot">Presentaciones breves/Sesión de posters</td>
+            <td class="schedule-description">-</td>
+          </tr>
+        
+      
+    </tbody>
+  </table>
+</div>
+<div id="day-3" class="schedule-tbl hidden">
+  <h3>Jueves, 7 de noviembre</h3>
+  <div class="schedule-location"><strong>Hotel Senac Ilha do Boi</strong></div>
+  <table>
+    <thead>
+      <tr>
+        <th class="schedule-time">Hora</th>
+        <th class="schedule-slot">Actividad</th>
+        <th class="schedule-description">Descripci�n</th>
+      </tr>
+    </thead>
+    <tbody>
       
         
           <tr>
@@ -277,11 +327,9 @@ tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
               </span>
             
 
-              Digging into a Linux Kernel
-              </br>
-			  <span class="schedule-name">Miquel de Caceres</span>
+              Miquel de Caceres
             </td>
-            <td class="schedule-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</td>
+            <td class="schedule-description">Digging into a Linux Kernel</td>
           </tr>
         
       
@@ -295,11 +343,9 @@ tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
               </span>
             
 
-              Introducing Windows 12
-              </br>
-			  <span class="schedule-name">Elsa Varela</span>
+              Elsa Varela
             </td>
-            <td class="schedule-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</td>
+            <td class="schedule-description">Introducing Windows 12</td>
           </tr>
         
       
@@ -314,7 +360,6 @@ tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
     </tbody>
   </table>
 </div>
-
           </section>
         
           <section class="speakers" id="speakers">
@@ -322,133 +367,10 @@ tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 
 <ul class="speakers-list">
 
-  <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
-    
-      <span class="speaker-photo">
-        <img class="photo" src="img/FotoFelipeBravo.jpeg" alt="Felipe Bravo" itemprop="image">
-      </span>
-    
 
-    <h3 class="speakers-name">
-      
-      <span class="speech-time">9h30</span>
-      
-      <span>Felipe Bravo</span>
-	  
-      <span class="speech-link"><a href="http://twitter.com/fbravo_sfm" target="_blank" title="@fbravo_sfm"> @fbravo_sfm </a></span>
-      
-    </h3>
 
-    <h3 class="schedule-title">
-	Título a definir
-     
-    </h3>
-	
-    <p class="speakers-bio">Catedrático de Universidad, Director del Instituto Universitario de Investigación en Gestión Forestal Sostenible. Presidente de la Sociedad Española de Ciencias Forestales. Su investigación se centra en la selvicultura, la dinámica forestal y la modelización del crecimiento y producción forestal </p>
-  </li>
-
-  <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
-    
-      <span class="speaker-photo">
-        <img class="photo" src="img/FotoNuriaAquilue.jpeg" alt="Nuria Aquilué" itemprop="image">
-      </span>
-    
-
-    <h3 class="speakers-name">
-      
-      <span class="speech-time">12h00</span>
-      
-      <span>Nuria Aquilué</span>
-	  
-      <span class="speech-link"><a href="http://www.cef-cfr.ca/index.php?n=Membres.NuriaAquilueJunyent" target="_blank" title="WEB"> WEB </a></span>
-      
-    </h3>
-
-    <h3 class="schedule-title">
-	Digging into a Linux Kernel
-     
-    </h3>
-	
-    <p class="speakers-bio">Investigadora postdoctoral de la Université du Québec à Montréal (Canadá), y del Centre de Ciència i Tecnología Forestal de Catalunya. Su investigación se centra en la modelización de la dinámica del paisaje forestal a escala regional, utilizando herramientas de modelización que integran diferentes factores de cambio, tanto naturales (como los incendios), como de origen antrópico (como la gestión forestal), para capturar los principales procesos que rigen la evolución de los bosques</p>
-  </li>
-
-  <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
-    
-      <span class="speaker-photo">
-        <img class="photo" src="img/FotoRafaCalama.jpeg" alt="Rafael Calama" itemprop="image">
-      </span>
-    
-
-    <h3 class="speakers-name">
-      
-      <span class="speech-time">15h00</span>
-      
-      <span>Rafael Calama</span>
-	  
-      <span class="speech-link"><a href="https://twitter.com/rafacalama2" target="_blank" title="@rafacalama2"> @rafacalama2 </a></span>
-      
-    </h3>
-
-    <h3 class="schedule-title">
-	Título a definir
-     
-    </h3>
-	
-    <p class="speakers-bio">Investigador Titular del Centro de Investigaciones Forestales del INIA. Es especialista en la modelización del crecimiento y la producción forestal y la provisión de productos no madereros (piñas, resina…)</p>
-  </li>
-
-  <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
-    
-      <span class="speaker-photo">
-        <img class="photo" src="img/FotoMiqueldeCaceres.jpeg" alt="Miquel de Caceres" itemprop="image">
-      </span>
-    
-
-    <h3 class="speakers-name">
-      
-      <span class="speech-time">10h00</span>
-      
-      <span>Miquel de Caceres</span>
-	  
-      <span class="speech-link"><a href="http://twitter.com/linus" target="_blank" title="@linus"> @linus </a></span>
-      
-    </h3>
-
-    <h3 class="schedule-title">
-	Digging into a Linux Kernel
-     
-    </h3>
-	
-    <p class="speakers-bio">Investigador del CTFC, responsable del grupo de Modelización de la Vegetación y adjunto a la dirección del Programa de Gestión Multifuncional del CTFC. Su investigación se centra en la modelización de la dinámica vegetal y las relaciones bosque-agua</p>
-  </li>
-
-  <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
-    
-      <span class="speaker-photo">
-        <img class="photo" src="/img/FotoElsaVarela.jpeg" alt="Elsa Varela" itemprop="image">
-      </span>
-    
-
-    <h3 class="speakers-name">
-      
-      <span class="speech-time">11h00</span>
-      
-      <span>Elsa Varela</span>
-	  
-      <span class="speech-link"><a href="http://github.com/billy95" target="_blank" title="@billy95"> @billy95 </a></span>
-      
-    </h3>
-
-    <h3 class="schedule-title">
-	Introducing Windows 12
-     
-    </h3>
-	
-    <p class="speakers-bio">Investigadora del Centre de Recerca en Economía i Desenvolupament Agroalimentari, su investigación analiza los aspectos socioeconómicos de los bosques y los sistemas agroforestales mediterráneos</p>
-  </li>
 
 </ul>
-
           </section>
         
           <section class="sponsors" id="sponsors">
@@ -510,11 +432,6 @@ tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="/js/jquery.js"><\/script>')</script>
-  
-  
-  <script src="https://maps.google.com/maps/api/js?key=my-secret-maps-key"></script>
-  <script src="/js/main.js"></script>
-  
   
   
 </body>

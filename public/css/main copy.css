@@ -1,3 +1,4 @@
+
 /* =============================================================================
    RESET
    ========================================================================== */
@@ -337,13 +338,29 @@ nav {
   text-align: center;
 }
 .logo-name {
-  margin-bottom: 0;
-  font-size: 10em;
+  margin-bottom: 1.5em;
+   margin-left: -40%; 
+   margin-right: 40%; 
+  font-size: 60px;
   letter-spacing: -0.04em;
 }
+
 .tagline {
-  margin-bottom: 10px;
-  font-size: 2em;
+  margin-bottom: 25px;
+   margin-left: -40%; 
+   margin-right: 40%; 
+  font-size: 30px;
+  letter-spacing: -0.02em;
+}
+
+.tagline2 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+   margin-left: -40%; 
+   margin-right: 40%; 
+  font-size: 30px;
+  font-weight: "bold";
+  color: #ffffff;
   letter-spacing: -0.02em;
 }
 .call-action-area .price {
@@ -381,17 +398,12 @@ nav {
   padding: 19px;
   margin: 0 -20px 0;
 }
-.about .row .column {
-  width: 46%;
-  float: left;
-  margin: 2%;
-}
 /* =============================================================================
    SPEAKER
    ========================================================================== */
 .speakers-item {
   position: relative;
-  min-height: 180px;
+  min-height: 150px;
   padding-left: 180px;
   margin-bottom: 30px;
   border-bottom: 1px dashed #e7e7e7;
@@ -405,9 +417,14 @@ nav {
   height: 120px;
 }
 .speech-title {
-  padding-top: 10px;
-  font-size: 2em;
+  padding-top: 2.5em;
+  font-size: 20px;
   margin-bottom: 1em;
+}
+.speech-day {
+  font-size: 18px;
+  padding: 10px 15px;
+  letter-spacing: -0.03em;
 }
 .speech-time {
   font-size: 18px;
@@ -415,11 +432,52 @@ nav {
   letter-spacing: -0.03em;
 }
 .speakers-name {
-  font-size: 1.6em;
+  font-size: 24px;
+  padding-bottom: 0.5em;
 }
 .speakers-item p {
+  font-size: 1 em;
+}
+.speech-link {
+  font-size: 18px;
+}
+/* =============================================================================
+   COMITEE
+   ========================================================================== */
+.comitee-item {
+  position: relative;
+  min-height: 60px;
+  padding-left: 100px;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed #e7e7e7;
+}
+.comitee-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 70px;
+  height: 70px;
+}
+.comitee-title {
+  padding-top: 10px;
+  font-size: 4em;
+  margin-bottom: 1em;
+}
+.comitee-name {
+  font-size: 24px;
+}
+.comitee-item p {
   font-size: 1.4em;
 }
+.comitee-company {
+  font-size: 20px;
+  color: #999;
+}
+
+
+
+
 /* =============================================================================
    SCHEDULE
    ========================================================================== */
@@ -468,13 +526,15 @@ nav {
 .sponsor-item,
 .partner-item {
   display: inline-block;
+  width: 200px;
+  height: 200px;
   margin: 0 30px 30px 0;
 }
-.sponsor--link,
+.sponsor-link,
 .partner-link {
   display: block;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   text-align: center;
   vertical-align: middle;
   line-height: 150px;
@@ -575,7 +635,7 @@ nav {
   .partner-item {
     margin: 0 5px 10px 0;
   }
-  .sponsor--link,
+  .sponsor-link,
   .partner-link {
     width: 95px;
     height: 95px;
@@ -676,7 +736,7 @@ nav {
   .partner-item {
     margin: 0 12px 15px 0;
   }
-  .sponsor--link,
+  .sponsor-link,
   .partner-link {
     width: 115px;
     height: 115px;
@@ -721,11 +781,11 @@ nav {
    HEADER
    ========================================================================== */
 .header {
-  background-image: url('../img/caratula.png');
-  background-color: #193244;
+  background-image: url('../img/fondo.jpg');
+  background-color: #2b2b2b;
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  background-position: center bottom;
+  background-size: 100% auto;
 }
 .logo-link,
 .tagline,
@@ -808,6 +868,27 @@ nav {
   background: #2b2b2b;
   border-radius: 8px;
 }
+.speech-day {
+  color: #fff;
+  background: #2b2b2b;
+  border-radius: 8px;
+}
+/* =============================================================================
+   COMITEE
+   ========================================================================== */
+.comitee-photo .photo {
+  border-radius: 50%;
+  box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.07);
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.comitee-item:hover .comitee-photo .photo {
+  box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
 /* =============================================================================
    SCHEDULE
    ========================================================================== */
@@ -883,11 +964,11 @@ nav {
 /* =============================================================================
    Media Queries
    ========================================================================== */
-/*@media only screen and (max-width: 1024px) {*/
-  /*.header {*/
-    /*background-size: auto 100%;*/
-  /*}*/
-/*}*/
+@media only screen and (max-width: 1024px) {
+  .header {
+    background-size: auto 100%;
+  }
+}
 @media only screen and (max-width: 480px) {
   /* speakers */
   .speaker-photo .photo {
@@ -901,115 +982,24 @@ nav {
     background: transparent;
     font-weight: bolder;
   }
+  .speech-day {
+    color: #2b2b2b;
+    background: transparent;
+    font-weight: bolder;
+  }  
   .github-link {
     display: none;
   }
 }
-
-/* =============================================================================
-   CSS Design by Roger Gomes
-   ========================================================================== */
-nav {
-  background-color: #fff !important;
-  border-bottom: 4px solid #356f9f;
-}
-
-nav .logo {
-  float: left;
-  margin-left: 30px;
-}
-
-nav .wrapper{
-  line-height: 36px;
-  text-transform: uppercase;
-}
-
-nav .wrapper .nav-item a{
-  color: #356f9f;
-}
-
-
-nav .wrapper .nav-item a:hover{
-  color: #f9c626;
-}
-
-footer {
-  text-align: center;
-  margin-top: 30px;
-}
-
-footer .icons img{
-  margin: 5px;
-}
-
-.overlay:before{
-  position: absolute;
-  content:" ";
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  display: block;
-  z-index:0;
-  background-color: rgba(53,111,159,0.5);
-}
-
-
-/* =============================================================================
-Multi-day conference stuff
-========================================================================== */
-
-.schedule-tabs {
-  list-style: none;
-}
-.schedule-tabs > li {
-  float: left;
-  display: block;
-}
-.schedule-tabs > li > a {
-  display: block;
-  padding: 10px 15px;
-  margin-right: 2px;
-  line-height: 1.42857143;
-  border: 1px solid transparent;
-  border-radius: 4px 4px 0 0;
-  font-size: 1.7em;
-}
-.schedule-tabs > li.active > a, .schedule-tabs > li.active > a:focus, .schedule-tabs > li.active > a:hover {
-  color: #555;
-  cursor: default;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-bottom-color: rgb(221, 221, 221);
-  border-bottom-color: transparent;
-}
-.schedule-tabs > li > a, .schedule-tabs > li > a:hover, .schedule-tabs > li > a:active, .schedule-tabs > li > a:focus{
-  color: #337ab7;
-  text-decoration: none;
-}
-.schedule-tbl h3 {
-  text-align: center;
-  margin-bottom: 1em;
-}
-.schedule-tbl.hidden {
-  display: none;
-}
-.schedule-location {
-  text-align: center;
-  font-size: 1.5em;
-  margin-bottom: 1em;
-}
-
-.diamante .sponsor--link{
-  width: 250px;
-  height: 250px;
-}
-
-.ouro .sponsor--link{
-  width: 200px;
-  height: 200px;
-}
-
-.speakers-sites {
-  font-size: 1em !important;
-}
+© 2019 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
