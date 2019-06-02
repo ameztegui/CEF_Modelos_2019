@@ -1,21 +1,20 @@
-baseurl: "http://127.0.0.1:3857"
-title: "V Congreso Modelización Forestal"
+baseurl: "/"
+title: "Conference name"
 canonifyurls: true
 theme: "hugo-conference"
-
 
 GoogleAnalytics: ""
 
 params:
   # Conference info
-  Name: "VI Reunión del Grupo de Modelización Forestal"
+  Name: "Conference name"
   Description: "Conference description"
-  Date: "7 y 8 de Noviembre de 2019"
-  #Price: "Only $100" # If your event is free, just comment this line
-  Venue: "Centre de Ciència i  Tecnologia Forestal de Catalunya (CTFC)"
-  Address: "Ctra. Sant Llorenç km.2\n Solsona (Lleida)"
-  City:  "Solsona"
-  State: "Lleida"
+  Date: "November 15"
+  Price: "Only $100" # If your event is free, just comment this line
+  Venue: "Coco Bongo"
+  Address: "Boulevard Kukulcan, 30"
+  City:  "CancÃºn"
+  State: "Quintana"
   Images: ["/img/badge.jpg"]
   GoogleMapsKey: "my-secret-maps-key"
 
@@ -26,36 +25,31 @@ params:
     - location
     - schedule
     - speakers
-    #- partners
-    - comitee
-    - inscription
-    #- contact
+    #- comitee
     - sponsors
-
+    #- partners
+    - contact
 
   # Titles which you can translate to other languages
   Titles:
-    about: "La reunión"
+    about: "La reunion"
     location: "Sede"
     speakers: "Ponentes"
     schedule: "Programa"
-    sponsors: "Colaboradores"
-    partners: "Partners"
+    #comitee: "Comite Organizador"
+    #sponsors: "Colaboradores"
+    partners: "Colaboradores"
     contact: "Contacto"
-    comitee: "Comité Organizador y científico"
-    comitee1: "Comité Organizador"
-    comitee2: "Comité Científico"
-    inscription: "Inscripción y documentación"
 
   # The Call To Action button at the header,
   # If you don't want this, just remove the callToAction property.
   CallToAction:
-    text: "Inscríbete ya!"
+    text: "Register now!"
     link: "http://register.example.com"
 
   # Fork me on GitHub, if you don't want this, just remove the forkButton property
-#  ForkButton:
-#    repository: "https://github.com/jweslley/hugo-conference/"
+  ForkButton:
+    repository: "https://github.com/jweslley/hugo-conference/"
 
   # List of Sponsors
   Sponsors:
@@ -81,18 +75,67 @@ params:
 
   # The entire schedule
   Schedule:
-    - name: "Check-in / Breakfast"
+    - name: "Bienvenida/Recepción de participantes"
+      time: "8h30"
+    - name: "Inauguración de las jornadas"
       time: "9h00"
     
     
-    - name: "Modelización de la Ecofisiología"
-      time: "9h30"
-      
+    - name: "Felipe Bravo"
+      company: "iuFor-Universidad de Valladolid"
+      photo: "img/FotoFelipeBravo.jpeg"
+      bio: "Catedrático de Universidad, Director del Instituto Universitario de Investigación en Gestión Forestal Sostenible. Presidente de la Sociedad Española de Ciencias Forestales. Su investigación se centra en la selvicultura, la dinámica forestal y la modelización del crecimiento y producción forestal "
+      link:
+        href: "http://twitter.com/fbravo_sfm"
+        text: "@fbravo_sfm"
+      presentation:
+        title: "Título a definir"
+        description: "Resumen a venir"
+        time: "9h30"    
+    
+    - name: "Sesion I: Modelización de la dinámica forestal y la distribución de especies en un contexto de cambio global"
+      time: "10h00"  
+    - name: "Presentaciones orales"
+      time: "10h00"  
+    - name: "Pausa Café"
+      time: "11h30"  
 
-    - name: "Miquel de Cáceres"
+    - name: "Nuria Aquilué"
+      company: "UQAM-CTFC"
+      photo: "img/FotoNuriaAquilue.jpeg"
+      bio: "Investigadora postdoctoral de la Université du Québec à Montréal (Canadá), y del Centre de Ciència i Tecnología Forestal de Catalunya. Su investigación se centra en la modelización de la dinámica del paisaje forestal a escala regional, utilizando herramientas de modelización que integran diferentes factores de cambio, tanto naturales (como los incendios), como de origen antrópico (como la gestión forestal), para capturar los principales procesos que rigen la evolución de los bosques"
+      link:
+        href: "http://www.cef-cfr.ca/index.php?n=Membres.NuriaAquilueJunyent"
+        text: "WEB"
+      presentation:
+        title: "Digging into a Linux Kernel"
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+        time: "12h00"
+    - name: "Presentaciones orales"
+      time: "12h30"  
+    - name: "Comida"
+      time: "13h30"  
+      
+    - name: "Sesion II: Modelización del crecimiento y la productividad forestal: nuevas técnicas y herramientas"
+      time: "15h00" 
+      
+    - name: "Rafael Calama"
+      company: "INIA"
+      photo: "img/FotoRafaCalama.jpeg"
+      bio: "Investigador Titular del Centro de Investigaciones Forestales del INIA. Es especialista en la modelización del crecimiento y la producción forestal y la provisión de productos no madereros (piñas, resina…)"
+      link:
+        href: "https://twitter.com/rafacalama2"
+        text: "@rafacalama2"
+      presentation:
+        title: "Título a definir"
+        description: "Resumen a definir"
+        time: "15h00"
+        
+        
+    - name: "Miquel de Caceres"
       company: "CTFC"
-      photo: "/img/speaker.jpg"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+      photo: "img/FotoMiqueldeCaceres.jpeg"
+      bio: "Investigador del CTFC, responsable del grupo de Modelización de la Vegetación y adjunto a la dirección del Programa de Gestión Multifuncional del CTFC. Su investigación se centra en la modelización de la dinámica vegetal y las relaciones bosque-agua"
       link:
         href: "http://twitter.com/linus"
         text: "@linus"
@@ -101,10 +144,10 @@ params:
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
         time: "10h00"
 
-    - name: "Bill Gates"
-      photo: "/img/speaker.jpg"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-      company: "Microsoft"
+    - name: "Elsa Varela"
+      photo: "/img/FotoElsaVarela.jpeg"
+      bio: "Investigadora del Centre de Recerca en Economía i Desenvolupament Agroalimentari, su investigación analiza los aspectos socioeconómicos de los bosques y los sistemas agroforestales mediterráneos"
+      company: "CREDA-UPC-IRTA"
       link:
         href: "http://github.com/billy95"
         text: "@billy95"
@@ -113,99 +156,7 @@ params:
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
         time: "11h00"
 
-    - name: "Lunch"
-      time: "12h00"
-
-    - name: "Chuck Norris"
-      photo: "/img/speaker.jpg"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-      company: "Delta Command"
-      link:
-        href: "http://twitter.com/littlechuck"
-        text: "@littlechuck"
-      presentation:
-        title: "How to kill a elephant with one finger"
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-        time: "13h00"
-
-    - name: "Steve Jobs"
-      photo: "/img/speaker.jpg"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-      company: "Apple, Inc."
-      link:
-        href: "http://github.com/stevie"
-        text: "@stevie"
-      presentation:
-        title: "Presenting iPad"
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-        time: "14h00"
 
     - name: "Coffee-break"
       time: "15h00"
 
-    - name: "Mark Zuckerberg"
-      photo: "/img/speaker.jpg"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-      company: "Facebook"
-      link:
-        href: "http://twitter.com/zuck"
-        text: "@zuck"
-      presentation:
-        title: "Revealing Facebook Secrets"
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-        time: "16h00"
-
-    - name: "Steve Wozniak"
-      photo: "/img/speaker.jpg"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-      company: "Apple, Inc."
-      link:
-        href: "http://twitter.com/woz"
-        text: "@woz"
-      presentation:
-        title: "Why do I prefer Android over iPhone"
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-        time: "17h00"
-
-
-# The entire schedule
-  comitee:
-    - name: "Aitor Ameztegui"
-      photo: "/img/Aitor_Foto.jpg"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, s"
-      company: "Universitat de Lleida"
-      link:
-        href: "http://twitter.com/zuck"
-        text: "@zuck"
-        
-    - name: "Andrés Bravo-Oviedo"
-      photo: "/img/speaker.jpg"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, s"
-      company: "CSIC - Museo de Ciencias Naturales"
-      link:
-        href: "http://twitter.com/zuck"
-        text: "@zuck"
-        
-    - name: "Cristina Vega"
-      photo: "/img/speaker.jpg"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, s"
-      company: "Universitat de Lleida"
-      link:
-        href: "http://twitter.com/zuck"
-        text: "@zuck"
-        
-    - name: "Antoni Trasobares"
-      photo: "/img/speaker.jpg"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, s"
-      company: "Centre de Ciència i Tecnologia Forestal de Catalunya"
-      link:
-        href: "http://twitter.com/zuck"
-        text: "@zuck"
-        
-    - name: "Assu Planas"
-      photo: "/img/speaker.jpg"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, s"
-      company: "Centre de Ciència i Tecnologia Forestal de Catalunya"
-      link:
-        href: "http://twitter.com/zuck"
-        text: "@zuck"
