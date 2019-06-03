@@ -45,6 +45,8 @@
             {{ end }}
 
               {{ .name }}
+              </br>
+            {{.company}}
             </td>
             <td class="schedule-description">{{ .presentation.title }}</td>
           </tr>
@@ -52,6 +54,7 @@
           <tr class="schedule-other">
             <td class="schedule-time">{{ .time }}</td>
             <td class="schedule-slot">{{ .name }}</td>
+            <td class="schedule-slot">{{ .company }}</td>
             <td class="schedule-description">-</td>
           </tr>
         {{ end }}
@@ -83,6 +86,9 @@
             {{ end }}
 
               {{ .name }}
+            </br>
+                    {{ .company }}
+
             </td>
             <td class="schedule-description">{{ .presentation.title }}</td>
           </tr>
@@ -90,6 +96,7 @@
           <tr class="schedule-other">
             <td class="schedule-time">{{ .time }}</td>
             <td class="schedule-slot">{{ .name }}</td>
+            <td class="schedule-slot">{{ .company }}</td>
             <td class="schedule-description">-</td>
           </tr>
         {{ end }}

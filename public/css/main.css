@@ -396,6 +396,8 @@ nav {
   margin-bottom: 30px;
   border-bottom: 1px dashed #e7e7e7;
 }
+
+
 .speaker-photo {
   position: absolute;
   top: 0;
@@ -415,7 +417,10 @@ nav {
   letter-spacing: -0.03em;
 }
 .speakers-name {
-  font-size: 1.6em;
+  font-size: 2.4em;
+}
+.speakers-company {
+  font-size: 2em;
 }
 .speakers-item p {
   font-size: 1.4em;
@@ -460,8 +465,41 @@ nav {
 }
 .speakers-company {
   display: block;
-  font-size: 12px;
+  font-size: 1.8em;
 }
+
+/* =============================================================================
+   COMITEE
+   ========================================================================== */
+.comitee-item {
+  position: relative;
+  min-height: 180px;
+  padding-left: 180px;
+  margin-bottom: 30px;
+  border-bottom: 1px dashed #e7e7e7;
+}
+
+.comitee-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 120px;
+  height: 120px;
+}
+
+.comitee-name {
+  font-size: 2.4em;
+}
+.comitee-company {
+  font-size: 2em;
+}
+.comitee-item p {
+  font-size: 1.4em;
+}
+
+
+
 /* =============================================================================
    SPONSORS  and  PARTNERS
    ========================================================================== */
@@ -808,6 +846,12 @@ nav {
   background: #2b2b2b;
   border-radius: 8px;
 }
+
+.speaker-name .name{
+  color: #fff;
+  background: #2b2b2b;
+  border-radius: 8px;
+}
 /* =============================================================================
    SCHEDULE
    ========================================================================== */
@@ -834,6 +878,7 @@ nav {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
 }
 .speakers-company {
+ font-size: 1.2 em;
   color: #999;
 }
 .schedule-slot {
@@ -1011,5 +1056,5 @@ Multi-day conference stuff
 }
 
 .speakers-sites {
-  font-size: 1em !important;
+  font-size: 1.3em !important;
 }

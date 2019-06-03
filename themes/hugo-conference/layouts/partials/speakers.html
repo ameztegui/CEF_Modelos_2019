@@ -10,7 +10,13 @@
     </span>
   {{ end }}
 
-  <h3 class="speakers-name">{{ .name }}
+   <h2 class="speakers-name">{{ .name }}
+  {{ with .link }}
+    <a href="{{ .href }}" target="_blank" title="{{ .text }}"> {{ .text }} </a>
+  {{ end }}
+  </h2>
+  
+   <h3 class="speakers-company">{{ .company }}
   {{ with .link }}
     <a href="{{ .href }}" target="_blank" title="{{ .text }}"> {{ .text }} </a>
   {{ end }}

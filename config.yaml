@@ -84,7 +84,6 @@ params:
     - name: "Felipe Bravo"
       company: "iuFor-Universidad de Valladolid"
       photo: "img/FotoFelipeBravo.jpeg"
-      bio: "Catedrático de Universidad, Director del Instituto Universitario de Investigación en Gestión Forestal Sostenible. Presidente de la Sociedad Española de Ciencias Forestales. Su investigación se centra en la selvicultura, la dinámica forestal y la modelización del crecimiento y producción forestal "
       link:
         href: "http://twitter.com/fbravo_sfm"
         text: "@fbravo_sfm"
@@ -103,10 +102,6 @@ params:
     - name: "Nuria Aquilué"
       company: "UQAM-CTFC"
       photo: "img/FotoNuriaAquilue.jpeg"
-      bio: "Investigadora postdoctoral de la Université du Québec à Montréal (Canadá), y del Centre de Ciència i Tecnología Forestal de Catalunya. Su investigación se centra en la modelización de la dinámica del paisaje forestal a escala regional, utilizando herramientas de modelización que integran diferentes factores de cambio, tanto naturales (como los incendios), como de origen antrópico (como la gestión forestal), para capturar los principales procesos que rigen la evolución de los bosques"
-      link:
-        href: "http://www.cef-cfr.ca/index.php?n=Membres.NuriaAquilueJunyent"
-        text: "WEB"
       presentation:
         title: "Digging into a Linux Kernel"
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
@@ -122,12 +117,7 @@ params:
     - name: "Rafael Calama"
       company: "INIA"
       photo: "img/FotoRafaCalama.jpeg"
-      bio: "Investigador Titular del Centro de Investigaciones Forestales del INIA. Es especialista en la modelización del crecimiento y la producción forestal y la provisión de productos no madereros (piñas, resina…)"
-      link:
-        href: "https://twitter.com/rafacalama2"
-        text: "@rafacalama2"
       presentation:
-        date: "06/11"
         title: "Título a definir"
         description: "Resumen a definir"
         time: "15h00"
@@ -145,10 +135,6 @@ params:
     - name: "Miquel de Caceres"
       company: "CTFC"
       photo: "img/FotoMiqueldeCaceres.jpeg"
-      bio: "Investigador del CTFC, responsable del grupo de Modelización de la Vegetación y adjunto a la dirección del Programa de Gestión Multifuncional del CTFC. Su investigación se centra en la modelización de la dinámica vegetal y las relaciones bosque-agua"
-      link:
-        href: "http://twitter.com/linus"
-        text: "@linus"
       presentation:
         title: "Digging into a Linux Kernel"
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
@@ -157,11 +143,7 @@ params:
 
     - name: "Elsa Varela"
       photo: "/img/FotoElsaVarela.jpeg"
-      bio: "Investigadora del Centre de Recerca en Economía i Desenvolupament Agroalimentari, su investigación analiza los aspectos socioeconómicos de los bosques y los sistemas agroforestales mediterráneos"
       company: "CREDA-UPC-IRTA"
-      link:
-        href: "http://github.com/billy95"
-        text: "@billy95"
       presentation:
         title: "Introducing Windows 12"
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
@@ -171,3 +153,62 @@ params:
     - name: "Coffee-break"
       time: "15h00"
 
+# List of Speakers
+  Speakers:
+    - name: "Felipe Bravo"
+      company: "Universidad de Valladolid"
+      photo: "/img/FotoFelipeBravo.jpeg"
+      bio: "Catedrático de Universidad, Director del Instituto Universitario de Investigación en Gestión Forestal Sostenible. Presidente de la Sociedad Española de Ciencias Forestales. Su investigación se centra en la selvicultura, la dinámica forestal y la modelización del crecimiento y producción forestal "
+      sites:
+       - name: "website"
+         href: "https://berinfontes.com"
+         text: "berinfontes.com"
+       - name: "twitter"
+         href: "https://twitter.com/fbravo_sfm"
+         text: "@fbravo_sfm"
+         
+    - name: "Nuria Aquilué"
+      company: "UQAM-CTFC"
+      photo: "/img/FotoNuriaAquilue.jpeg"
+      bio: "Investigadora postdoctoral de la Université du Québec à Montréal (Canadá), y del Centre de Ciència i Tecnología Forestal de Catalunya. Su investigación se centra en la modelización de la dinámica del paisaje forestal a escala regional, utilizando herramientas de modelización que integran diferentes factores de cambio, tanto naturales (como los incendios), como de origen antrópico (como la gestión forestal), para capturar los principales procesos que rigen la evolución de los bosques"
+      sites:
+       - name: "website"
+         href: "http://www.cef-cfr.ca/index.php?n=Membres.NuriaAquilueJunyent"
+         text: "Profile"
+         
+    - name: "Rafael Calama"
+      company: "Instituto Nacional de Investigaciones Agrarias"
+      photo: "/img/FotoRafaCalama.jpeg"
+      bio: "Investigador Titular del Centro de Investigaciones Forestales del INIA. Es especialista en la modelización del crecimiento y la producción forestal y la provisión de productos no madereros (piñas, resina…)"
+      sites:
+       - name: "website"
+         href: "https://berinfontes.com"
+         text: "berinfontes.com"
+       - name: "twitter"
+         href: "https://twitter.com/rafacalama2"
+         text: "@rafacalama2"
+         
+    - name: "Miquel de Cáceres"
+      company: "CTFC"
+      photo: "/img/FotoMiqueldeCaceres.jpeg"
+      bio: "Investigador del CTFC, responsable del grupo de Modelización de la Vegetación y adjunto a la dirección del Programa de Gestión Multifuncional del CTFC. Su investigación se centra en la modelización de la dinámica vegetal y las relaciones bosque-agua"
+      sites:
+       - name: "website"
+         href: "https://berinfontes.com"
+         text: "berinfontes.com"
+       - name: "twitter"
+         href: "https://twitter.com/fbravo_sfm"
+         text: "@fbravo_sfm"
+         
+    - name: "Elsa Varela"
+      company: "CREDA-UPC-IRTA"
+      photo: "/img/FotoElsaVarela.jpeg"
+      bio: "Investigadora del Centre de Recerca en Economía i Desenvolupament Agroalimentari, su investigación analiza los aspectos socioeconómicos de los bosques y los sistemas agroforestales mediterráneos"
+      sites:
+       - name: "website"
+         href: "https://berinfontes.com"
+         text: "berinfontes.com"
+       - name: "twitter"
+         href: "https://twitter.com/fbravo_sfm"
+         text: "@fbravo_sfm"
+         
