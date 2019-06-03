@@ -25,10 +25,10 @@ params:
     - location
     - schedule
     - speakers
-    #- comitee
+    - comite
+    - scicom
     - sponsors
     #- partners
-    - contact
 
   # Titles which you can translate to other languages
   Titles:
@@ -36,20 +36,11 @@ params:
     location: "Sede"
     speakers: "Ponentes"
     schedule: "Programa"
-    #comitee: "Comite Organizador"
-    #sponsors: "Colaboradores"
-    partners: "Colaboradores"
+    comite: "Comite Organizador"
+    scicom: "Comite Científico"
+    sponsors: "Colaboradores"
+    #partners: "Colaboradores"
     contact: "Contacto"
-
-  # The Call To Action button at the header,
-  # If you don't want this, just remove the callToAction property.
-  CallToAction:
-    text: "Register now!"
-    link: "http://register.example.com"
-
-  # Fork me on GitHub, if you don't want this, just remove the forkButton property
-  ForkButton:
-    repository: "https://github.com/jweslley/hugo-conference/"
 
   # List of Sponsors
   Sponsors:
@@ -211,4 +202,70 @@ params:
        - name: "twitter"
          href: "https://twitter.com/fbravo_sfm"
          text: "@fbravo_sfm"
-         
+
+# Organizing Comitee
+  Comite:
+    - name: "Aitor Ameztegui"
+      company: "Universitat de Lleida"
+      photo: "/img/FotoAitorAmeztegui.jpg"
+      bio: "Catedrático de Universidad, Director del Instituto Universitario de Investigación en Gestión Forestal Sostenible. Presidente de la Sociedad Española de Ciencias Forestales. Su investigación se centra en la selvicultura, la dinámica forestal y la modelización del crecimiento y producción forestal "
+    - name: "Andrés Bravo-Oviedo"
+      company: "Museo Nacional de Ciencias Naturales - CSIC"
+      photo: "/img/FotoAndresBravo.jpg"
+      bio: "Catedrático de Universidad, Director del Instituto Universitario de Investigación en Gestión Forestal Sostenible. Presidente de la Sociedad Española de Ciencias Forestales. Su investigación se centra en la selvicultura, la dinámica forestal y la modelización del crecimiento y producción forestal "
+    - name: "Cristina Vega"
+      company: "Universitat de Lleida"
+      photo: "/img/FotoCristinaVega.jpeg"
+      bio: "Catedrático de Universidad, Director del Instituto Universitario de Investigación en Gestión Forestal Sostenible. Presidente de la Sociedad Española de Ciencias Forestales. Su investigación se centra en la selvicultura, la dinámica forestal y la modelización del crecimiento y producción forestal "
+    - name: "Antoni Trasobares"
+      company: "Centre de Ciència i Tecnologia Forestal de Catalunya"
+      photo: "/img/FotoAntoniTrasobares.jpg"
+      bio: "Catedrático de Universidad, Director del Instituto Universitario de Investigación en Gestión Forestal Sostenible. Presidente de la Sociedad Española de Ciencias Forestales. Su investigación se centra en la selvicultura, la dinámica forestal y la modelización del crecimiento y producción forestal "
+    - name: "Lluís Coll"
+      company: "Universitat de Lleida"
+      photo: "/img/FotoLluisColl.jpeg"
+      bio: "Catedrático de Universidad, Director del Instituto Universitario de Investigación en Gestión Forestal Sostenible. Presidente de la Sociedad Española de Ciencias Forestales. Su investigación se centra en la selvicultura, la dinámica forestal y la modelización del crecimiento y producción forestal "
+    - name: "Assu Planas"
+      company: "Centre de Ciència i Tecnologia Forestal de Catalunya"
+      photo: "/img/FotoAssuPlanas.jpeg"
+      bio: "Catedrático de Universidad, Director del Instituto Universitario de Investigación en Gestión Forestal Sostenible. Presidente de la Sociedad Española de Ciencias Forestales. Su investigación se centra en la selvicultura, la dinámica forestal y la modelización del crecimiento y producción forestal "
+
+
+# Scientific Comitee
+  Scicom:
+    - name: "Raquel Benavides"
+      photo: "/img/FotoRaquelBenavides.jpeg"
+      company: "Museo Nacional de Ciencias Naturales - CSIC"
+    - name: "Juan A. Blanco"
+      photo: "/img/FotoJuanBlanco.jpeg"
+      company: "Universidad Pública de Navarra"
+    - name: "Antonio del Campo"
+      photo: "/img/FotoAntoniodelCampo.jpg"
+      company: "Universitat Politécnica de València"
+    - name: "Sonia Condés"
+      photo: "/img/FotoSoniaCondes.jpeg"
+      company: "Universidad Politécnica de Madrid"
+    - name: "Olalla Díaz-Yañez"
+      photo: "/img/FotoOlallaDiaz.jpeg"
+      company: "University of Eastern Finland"
+    - name: "Andrea Duane"
+      photo: "/img/FotoAndreaDuane.jpeg"
+      company: "Centre de Ciència i Tecnologia Forestal de Catalunya (CTFC)"
+    - name: "Raúl García-Valdés"
+      photo: "/img/FotoRaulGarcia.jpeg"
+      company: "Centre de Recerca en Ecologia i Aplicacions Forestals (CREAF)"
+    - name: "Elena Górriz"
+      photo: "/img/FotoElenaGorriz.jpeg"
+      company: "European Forest Institute"
+    - name: "Santiago Martín-Alcón"
+      photo: "/img/FotoSantiagoMartin.jpeg"
+      company: "Agresta S Coop."
+    - name: "Sergio de Miguel"
+      photo: "/img/FotoSergiodeMiguel.jpeg"
+      company: "Universitat de Lleida"
+    - name: "Marcos Rodrigues"
+      photo: "/img/FotoMarcosRodrigues.jpeg"
+      company: "Universitat de Lleida"
+    - name: "Jordi Vayreda"
+      photo: "/img/FotoJordiVayreda.jpeg"
+      company: "Centre de Recerca en Ecologia i Aplicacions Forestals (CREAF)"

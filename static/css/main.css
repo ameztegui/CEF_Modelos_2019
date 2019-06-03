@@ -317,7 +317,6 @@ p {
    NAVIGATION
    ========================================================================== */
 nav {
-  padding: 15px 0;
   position: fixed;
   width: 100%;
   z-index: 10;
@@ -325,6 +324,7 @@ nav {
 .nav-item {
   display: inline-block;
   margin-right: 15px;
+  font-family: "Sifonn Pro";
 }
 .nav-link {
   font-size: 1.4em;
@@ -334,6 +334,8 @@ nav {
    ========================================================================== */
 .header {
   padding: 100px 0 100px;
+  display:block; 
+  width:100%; 
   text-align: center;
 }
 .logo-name {
@@ -391,8 +393,8 @@ nav {
    ========================================================================== */
 .speakers-item {
   position: relative;
-  min-height: 180px;
-  padding-left: 180px;
+  min-height: 160px;
+  padding-left: 150px;
   margin-bottom: 30px;
   border-bottom: 1px dashed #e7e7e7;
 }
@@ -418,6 +420,7 @@ nav {
 }
 .speakers-name {
   font-size: 2.4em;
+  color: "#000000";
 }
 .speakers-company {
   font-size: 2em;
@@ -466,36 +469,70 @@ nav {
 .speakers-company {
   display: block;
   font-size: 1.8em;
+  
 }
 
 /* =============================================================================
-   COMITEE
+   COMITE
    ========================================================================== */
-.comitee-item {
+.comite-item {
   position: relative;
-  min-height: 180px;
-  padding-left: 180px;
-  margin-bottom: 30px;
+  min-height: 120px;
+  padding-left: 120px;
+  margin-bottom: 10px;
   border-bottom: 1px dashed #e7e7e7;
 }
 
-.comitee-photo {
+.comite-photo {
   position: absolute;
   top: 0;
   left: 0;
   display: block;
-  width: 120px;
-  height: 120px;
+  width: 90px;
+  height: 90px;
 }
 
-.comitee-name {
-  font-size: 2.4em;
+.comite-name {
+  font-size: 2.1em;
 }
-.comitee-company {
-  font-size: 2em;
+.comite-company {
+    color: #999;
+    font-size: 1.8em;
 }
-.comitee-item p {
-  font-size: 1.4em;
+.comite-item p {
+    font-size: 1.4em;
+}
+
+/* =============================================================================
+   SCIENTIFIC COMITEE
+   ========================================================================== */
+.scicom-item {
+  position: relative;
+  min-height: 50px;
+  padding-left: 60px;
+  vertical-align: middle;
+  margin-top: 10px;
+  border-bottom: 0.5px dashed #e7e7e7;
+}
+
+.scicom-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+
+.scicom-name {
+  font-size: 1.6em;
+}
+.scicom-company {
+    color: #999;
+    font-size: 1.3em;
+}
+.scicom-item p {
+    font-size: 1.4em;
 }
 
 
@@ -725,13 +762,22 @@ nav {
    MAIN LAYOUT
    ========================================================================== */
 html {
-  background: #F6F6F6;
-  font: normal normal 10px/1.2em helvetica, arial, sans-serif;
+  background: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
   color: #777;
 }
 /* =============================================================================
    BASIC STYLES
    ========================================================================== */
+@font-face {
+font-family: 'Sifonn Pro';
+font-style: normal;
+font-weight: normal;
+src: local('Sifonn Pro'), url('SIFONN_PRO.woff') format('woff');
+}
+
+
 h1,
 h2,
 h3,
@@ -740,20 +786,26 @@ h5,
 h6 {
   color: #2b2b2b;
 }
+
+h2{
+    color: #8f0202;
+    font-size: 3.8em;  
+}
 /* =============================================================================
    NAVIGATION
    ========================================================================== */
 nav {
+    clear:both;
   background: #2b2b2b;
 }
 .nav-link {
-  color: #e7e7e7;
+  color: #8f0202;
 }
 .nav-link:active,
 .nav-link:hover,
 .nav-link:focus,
 .nav-link.current {
-  color: #fff;
+  color: #8f0202;
 }
 /* =============================================================================
    HEADER
@@ -763,7 +815,7 @@ nav {
   background-color: #193244;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: contain;
 }
 .logo-link,
 .tagline,
@@ -802,7 +854,7 @@ nav {
    CONTENT
    ========================================================================== */
 .content a {
-  color: #f0a303;
+  color: #8F0202;
 }
 .content a:hover,
 .content a:focus {
@@ -832,6 +884,26 @@ nav {
 .speaker-photo .photo {
   border-radius: 50%;
   box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.07);
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.comite-photo .photo {
+  border-radius: 50%;
+  box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.07);
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.scicom-photo .photo {
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.07);
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -ms-transition: all 0.3s ease-out;
@@ -899,8 +971,7 @@ nav {
 .sponsor--link,
 .partner-link {
   background: #fff;
-  border: 1px solid #ccc;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.15);
 }
 .sponsor--link:hover,
 .sponsor--link:focus,
@@ -956,7 +1027,7 @@ nav {
    ========================================================================== */
 nav {
   background-color: #fff !important;
-  border-bottom: 4px solid #356f9f;
+  border-bottom: 4px solid #8F0202;
 }
 
 nav .logo {
@@ -970,7 +1041,7 @@ nav .wrapper{
 }
 
 nav .wrapper .nav-item a{
-  color: #356f9f;
+  color: #8F0202;
 }
 
 
@@ -1029,7 +1100,7 @@ Multi-day conference stuff
   border-bottom-color: transparent;
 }
 .schedule-tabs > li > a, .schedule-tabs > li > a:hover, .schedule-tabs > li > a:active, .schedule-tabs > li > a:focus{
-  color: #337ab7;
+  color: #8F0202;
   text-decoration: none;
 }
 .schedule-tbl h3 {

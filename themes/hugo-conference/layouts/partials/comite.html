@@ -1,0 +1,37 @@
+<h2 style="font-family: 'Sifonn Pro'" class="section-title">{{ .titles.comite }}</h2>
+
+<ul class="comite-list">
+
+{{ range $comite := .comite }}
+  <li class="comite-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+  {{ with .photo }}
+    <span class="comite-photo">
+    <img class="photo" src="{{ . }}" alt="{{ $comite.name }}" itemprop="image">
+    </span>
+  {{ end }}
+
+   <h4 class="comite-name">{{ .name }}
+  {{ with .link }}
+    <a href="{{ .href }}" target="_blank" title="{{ .text }}"> {{ .text }} </a>
+  {{ end }}
+  </h4>
+  
+   <h3 class="comite-company">{{ .company }}
+  {{ with .link }}
+    <a href="{{ .href }}" target="_blank" title="{{ .text }}"> {{ .text }} </a>
+  {{ end }}
+  </h3>
+  <p class="comite-bio">{{ .bio }}</p>
+  <p class="comite-sites">
+  <!--Links:-->
+  {{ range $sites := .sites }}
+    {{ .name }}: <a href="{{ .href }}" target="_blank" title="{{ .text }}"> {{ .text }} </a><br>
+  {{ end }}
+  </p>
+  </li>
+
+
+{{ end }}
+
+
+</ul>
