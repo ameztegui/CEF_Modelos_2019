@@ -548,11 +548,11 @@ nav {
 .sponsor--link,
 .partner-link {
   display: block;
-  width: 150px;
-  height: 150px;
+  width: 260px;
+  height: 260px;
   text-align: center;
   vertical-align: middle;
-  line-height: 150px;
+  line-height: 260px;
 }
 /* =============================================================================
    CONTATO
@@ -764,7 +764,8 @@ nav {
 html {
   background: #FFFFFF;
   font-family: 'Montserrat', sans-serif;
-  font-size: 10px;
+  font-weight: lighter;
+  font-size: 11px;
   color: #777;
 }
 /* =============================================================================

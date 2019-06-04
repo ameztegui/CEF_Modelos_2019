@@ -22,22 +22,20 @@ params:
   # you can also change order here and it will reflect on page
   Sections:
     - about
-    - location
     - schedule
     - speakers
     - comite
-    - scicom
+    - location
     - sponsors
     #- partners
 
   # Titles which you can translate to other languages
   Titles:
-    about: "La reunion"
+    about: "La reunión"
     location: "Sede"
-    speakers: "Ponentes"
+    speakers: "Ponentes Invitados"
     schedule: "Programa"
-    comite: "Comite Organizador"
-    scicom: "Comite Científico"
+    comite: "Comité Organizador y Científico"
     sponsors: "Colaboradores"
     #partners: "Colaboradores"
     contact: "Contacto"
@@ -52,7 +50,7 @@ params:
       url: "https://secforestales.org"
 
     - name: "UdL"
-      logo: "/img/logo_udl.jpg"
+      logo: "/img/logo_udl.png"
       url: "https://udl.cat"
 
   # List of Partners

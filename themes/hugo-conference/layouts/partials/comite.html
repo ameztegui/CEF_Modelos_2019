@@ -1,4 +1,4 @@
-<h2 style="font-family: 'Sifonn Pro'" class="section-title">{{ .titles.comite }}</h2>
+<h2 style="font-family: 'Sifonn Pro'" class="section-title">{{ "Comité Organizador" }}</h2>
 
 <ul class="comite-list">
 
@@ -28,6 +28,37 @@
     {{ .name }}: <a href="{{ .href }}" target="_blank" title="{{ .text }}"> {{ .text }} </a><br>
   {{ end }}
   </p>
+  </li>
+
+
+{{ end }}
+
+
+</ul>
+
+<h2 style="font-family: 'Sifonn Pro'" class="section-title">{{ "Comité científico" }}</h2>
+
+<ul class="scicom-list">
+
+{{ range $scicom := .scicom }}
+  <li class="scicom-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+  {{ with .photo }}
+    <span class="scicom-photo">
+    <img class="photo" src="{{ . }}" alt="{{ $scicom.name }}" itemprop="image">
+    </span>
+  {{ end }}
+
+   <h4 class="scicom-name">{{ .name }}
+  {{ with .link }}
+    <a href="{{ .href }}" target="_blank" title="{{ .text }}"> {{ .text }} </a>
+  {{ end }}
+  </h4>
+   <h3 class="scicom-company">{{ .company }}
+  {{ with .link }}
+    <a href="{{ .href }}" target="_blank" title="{{ .text }}"> {{ .text }} </a>
+  {{ end }}
+  </h3>
+
   </li>
 
 
