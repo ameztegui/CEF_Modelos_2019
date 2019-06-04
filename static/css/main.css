@@ -423,7 +423,7 @@ nav {
   color: "#000000";
 }
 .speakers-company {
-  font-size: 2em;
+  font-size: 8px;
 }
 .speakers-item p {
   font-size: 1.4em;
@@ -468,7 +468,7 @@ nav {
 }
 .speakers-company {
   display: block;
-  font-size: 1.8em;
+  font-size: 1.4em;
   
 }
 
@@ -950,7 +950,11 @@ nav {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
 }
 .speakers-company {
- font-size: 1.2 em;
+ font-size: 1.6em;
+  color: #999;
+}
+.schedule-sesion {
+ font-size: 120%;
   color: #999;
 }
 .schedule-slot {

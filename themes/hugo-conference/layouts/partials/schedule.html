@@ -29,11 +29,20 @@
       <tr>
         <th class="schedule-time">Hora</th>
         <th class="schedule-slot">Actividad</th>
-        <th class="schedule-description">Descripci?n</th>
+        <th class="schedule-description">Descripción</th>
       </tr>
     </thead>
     <tbody>
       {{ range $slot := .scheduleday1 }}
+        {{ if ne .sesion nil}}
+        <tr bgcolor= "#DCDCDC">
+            <td style="text-align:center; font-size:1.6em" colspan=3 >{{.sesion}}: {{.description}}</td>
+
+        </tr>
+        
+        {{ else }}            
+
+        
         {{ if ne .presentation nil }}
           <tr>
             <td class="schedule-time">{{ .presentation.time }}</td>
@@ -44,9 +53,8 @@
               </span>
             {{ end }}
 
-              {{ .name }}
-              </br>
-            {{.company}}
+               <span class="speakers-name"; style="font-size:1.1em">{{ .name }}</span>
+               <span class="speakers-company"; style="font-size:0.9em">{{ .company }}</span>
             </td>
             <td class="schedule-description">{{ .presentation.title }}</td>
           </tr>
@@ -54,11 +62,11 @@
           <tr class="schedule-other">
             <td class="schedule-time">{{ .time }}</td>
             <td class="schedule-slot">{{ .name }}</td>
-            <td class="schedule-slot">{{ .company }}</td>
-            <td class="schedule-description">-</td>
+            <td class="schedule-description">{{ .description }}</td>
           </tr>
         {{ end }}
       {{ end }}
+            {{ end }}
     </tbody>
   </table>
 </div>
@@ -69,11 +77,18 @@
       <tr>
         <th class="schedule-time">Hora</th>
         <th class="schedule-slot">Actividad</th>
-        <th class="schedule-description">Descripci?n</th>
+        <th class="schedule-description">Descripción</th>
       </tr>
     </thead>
     <tbody>
       {{ range $slot := .scheduleday2 }}
+        {{ if ne .sesion nil}}
+        <tr bgcolor= "#DCDCDC">
+            <td style="text-align:center; font-size:1.6em" colspan=3 >{{.sesion}}: {{.description}}</td>
+
+        </tr>
+        
+        {{ else }}  
         {{ if ne .presentation nil }}
           <tr>
             <td class="schedule-time">{{ .presentation.time }}</td>
@@ -84,9 +99,8 @@
               </span>
             {{ end }}
 
-              {{ .name }}
-            </br>
-                    {{ .company }}
+               <span class="speakers-name"; style="font-size:1.1em">{{ .name }}</span>
+               <span class="speakers-company"; style="font-size:0.9em">{{ .company }}</span>
 
             </td>
             <td class="schedule-description">{{ .presentation.title }}</td>
@@ -95,11 +109,12 @@
           <tr class="schedule-other">
             <td class="schedule-time">{{ .time }}</td>
             <td class="schedule-slot">{{ .name }}</td>
-            <td class="schedule-slot">{{ .company }}</td>
-            <td class="schedule-description">-</td>
+            <td class="schedule-description">{{ .description }}</td>
           </tr>
         {{ end }}
       {{ end }}
+     {{ end }}
+
     </tbody>
   </table>
 </div>
