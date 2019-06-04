@@ -77,31 +77,35 @@ params:
         href: "http://twitter.com/fbravo_sfm"
         text: "@fbravo_sfm"
       presentation:
-        title: "Título a definir"
+        title: "Ponencia inagural"
         description: "Resumen a venir"
         time: "9h30"    
     
-    - name: "Sesion I: Modelización de la dinámica forestal y la distribución de especies en un contexto de cambio global"
-      time: "10h00"  
+    - sesion: "Sesion I"
+      description: "Modelización de la dinámica forestal y la distribución de especies en un contexto de cambio global"
     - name: "Presentaciones orales"
       time: "10h00"  
+      description: "Sesión I"
     - name: "Pausa Café"
+      coffee: "Break"
       time: "11h30"  
 
     - name: "Nuria Aquilué"
       company: "UQAM-CTFC"
       photo: "img/FotoNuriaAquilue.jpeg"
       presentation:
-        title: "Digging into a Linux Kernel"
+        title: "Ponencia invitada sesión I"
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
         time: "12h00"
     - name: "Presentaciones orales"
       time: "12h30"  
+      description: "Sesión I"
+
     - name: "Comida"
       time: "13h30"  
       
-    - name: "Sesion II: Modelización del crecimiento y la productividad forestal: nuevas técnicas y herramientas"
-      time: "15h00" 
+    - sesion: "Sesion II"
+      description: "Modelización del crecimiento y la productividad forestal: nuevas técnicas y herramientas" 
       
     - name: "Rafael Calama"
       company: "INIA"
@@ -113,34 +117,67 @@ params:
  
     - name: "Presentaciones orales"
       time: "15h30" 
+      description: "Sesión II"
 
     - name: "Pausa-café"
       time: "17h00" 
+      
     - name: "Presentaciones breves/Sesión de posters"
       time: "17h30" 
       
   ScheduleDay2:
-      
+
+    - sesion: "Sesion III"
+      description: "Modelización de procesos ecológicos e interacciones bosque-agua" 
+          
     - name: "Miquel de Caceres"
       company: "CTFC"
       photo: "img/FotoMiqueldeCaceres.jpeg"
       presentation:
-        title: "Digging into a Linux Kernel"
+        title: "Ponencia sesión III"
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-        date: "07/11"
-        time: "10h00"
+        time: "9h00"
 
+    - name: "Presentaciones orales"
+      time: "9h30" 
+      description: "Sesión III"
+      
+    - name: "Pausa café"
+      time: "11h00" 
+      
+    - name: "Presentaciones orales"
+      time: "11h30" 
+      description: "Sesión III (cont.)"
+
+    - name: "Presentaciones breves/Sesión de posters"
+      time: "12:30" 
+      description: 
+    
+    - name: "Comida"
+      time: "13h30"   
+ 
+ 
+    - sesion: "Sesion IV"
+      description: "Cuantificación, valoración y optimización de servicios ecosistémicos" 
+               
     - name: "Elsa Varela"
       photo: "/img/FotoElsaVarela.jpeg"
       company: "CREDA-UPC-IRTA"
       presentation:
-        title: "Introducing Windows 12"
+        title: "Ponencia sesión IV"
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-        time: "11h00"
-
+        time: "15h00"
+        
+    - name: "Presentaciones orales"
+      time: "15h30" 
+      description: "Sesión IV "
 
     - name: "Coffee-break"
-      time: "15h00"
+      time: "17h00"
+
+    - name: "Mesa redonda"
+      time: "17h30" 
+      description: "Mesa redonda, conclusiones y clausura de las jornadas"
 
 # List of Speakers
   Speakers:
