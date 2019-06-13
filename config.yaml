@@ -26,7 +26,8 @@ params:
     - speakers
     - comite
     - location
-    - sponsors
+    #- sponsors
+    - registration
     #- partners
 
   # Titles which you can translate to other languages
@@ -36,22 +37,22 @@ params:
     speakers: "Ponentes Invitados"
     schedule: "Programa"
     comite: "Comité Organizador y Científico"
-    sponsors: "Colaboradores"
+    sponsors: "Colaboran"
     #partners: "Colaboradores"
-    contact: "Contacto"
+    registration: "Inscripción y documentación"
 
   # List of Sponsors
   Sponsors:
     - name: "CTFC"
       logo: "/img/logo_ctfc.jpg"
-      url: "https://ctfc.cat"
+      url: "http://www.ctfc.cat"
     - name: "SECF"
       logo: "/img/logo_secf.jpg"
-      url: "https://secforestales.org"
+      url: "http://www.secforestales.org"
 
     - name: "UdL"
       logo: "/img/logo_udl.png"
-      url: "https://udl.cat"
+      url: "http://www.udl.cat/ca/"
 
   # List of Partners
   Partners:
@@ -94,8 +95,7 @@ params:
       company: "UQAM-CTFC"
       photo: "img/FotoNuriaAquilue.jpeg"
       presentation:
-        title: "Ponencia invitada sesión I"
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+        title: "Modelizando el futuro de los paisajes forestales Mediterráneos: El reto de la integración"
         time: "12h00"
     - name: "Presentaciones orales"
       time: "12h30"  
@@ -142,7 +142,7 @@ params:
       time: "9h30" 
       description: "Sesión III"
       
-    - name: "Pausa café"
+    - name: "Pausa-café"
       time: "11h00" 
       
     - name: "Presentaciones orales"
@@ -164,15 +164,14 @@ params:
       photo: "/img/FotoElsaVarela.jpeg"
       company: "CREDA-UPC-IRTA"
       presentation:
-        title: "Ponencia sesión IV"
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+        title: "Valoración económica de servicios ecosistémicos: aplicación, resultados y limitaciones en el contexto forestal Mediterráneo"
         time: "15h00"
         
     - name: "Presentaciones orales"
       time: "15h30" 
       description: "Sesión IV "
 
-    - name: "Coffee-break"
+    - name: "Pausa-café"
       time: "17h00"
 
     - name: "Mesa redonda"
@@ -185,86 +184,85 @@ params:
       company: "Universidad de Valladolid"
       photo: "/img/FotoFelipeBravo.jpeg"
       bio: "Catedrático de Universidad, Director del Instituto Universitario de Investigación en Gestión Forestal Sostenible. Presidente de la Sociedad Española de Ciencias Forestales. Su investigación se centra en la selvicultura, la dinámica forestal y la modelización del crecimiento y producción forestal "
+      talk: "A definir"
+      website: "http://sostenible.palencia.uva.es/users/fbravo"
       sites:
-       - name: "website"
-         href: "https://berinfontes.com"
-         text: "berinfontes.com"
-       - name: "twitter"
+       - name: "@fbravo_sfm"
          href: "https://twitter.com/fbravo_sfm"
          text: "@fbravo_sfm"
          
     - name: "Nuria Aquilué"
-      company: "UQAM-CTFC"
+      company: "UQAM-InForest JRU (CTFC-CREAF)"
       photo: "/img/FotoNuriaAquilue.jpeg"
-      bio: "Investigadora postdoctoral de la Université du Québec à Montréal (Canadá), y del Centre de Ciència i Tecnología Forestal de Catalunya. Su investigación se centra en la modelización de la dinámica del paisaje forestal a escala regional, utilizando herramientas de modelización que integran diferentes factores de cambio, tanto naturales (como los incendios), como de origen antrópico (como la gestión forestal), para capturar los principales procesos que rigen la evolución de los bosques"
+      bio: "Investigadora postdoctoral de la Université du Québec à Montreal (Canadá) y del Centre de Ciència i Tecnología Forestal de Catalunya. Su investigación se centra en cuantificar los efectos sobre los ecosistemas forestales de factores de cambio tanto naturales como antrópicos y de las interacciones espacio-temporales entre ellos, usando modelos dinámicos de paisaje aplicados a escalas regionales. "
+      talk: "Modelizando el futuro de los paisajes forestales Mediterráneos: El reto de la integración"
+      website: "http://www.cef-cfr.ca/index.php?n=Membres.NuriaAquilueJunyent"
       sites:
-       - name: "website"
+       - name: "Website"
          href: "http://www.cef-cfr.ca/index.php?n=Membres.NuriaAquilueJunyent"
-         text: "Profile"
+         text: "Website"
          
     - name: "Rafael Calama"
       company: "Instituto Nacional de Investigaciones Agrarias"
       photo: "/img/FotoRafaCalama.jpeg"
-      bio: "Investigador Titular del Centro de Investigaciones Forestales del INIA. Es especialista en la modelización del crecimiento y la producción forestal y la provisión de productos no madereros (piñas, resina…)"
+      bio: "Científico Titular en el Departamento de Dinámica y Gestión Forestal del INIA-CIFOR, y profesor invitado de Modelización forestal en la Universidad de Valladolid. Especialista en modelización y gestión forestal. Su principal línea de investigación se centra en la modelización de los diferentes procesos asociados con la dinámica de los bosques Mediterráneos"
+      talk: " A definir"
+      website: "http://sostenible.palencia.uva.es/users/rcalama"
       sites:
-       - name: "website"
-         href: "https://berinfontes.com"
-         text: "berinfontes.com"
        - name: "twitter"
          href: "https://twitter.com/rafacalama2"
          text: "@rafacalama2"
+
          
     - name: "Miquel de Cáceres"
-      company: "CTFC"
+      company: "Centre de Ciència i Tecnologia Forestal de Catalunya (CTFC)"
       photo: "/img/FotoMiqueldeCaceres.jpeg"
       bio: "Investigador del CTFC, responsable del grupo de Modelización de la Vegetación y adjunto a la dirección del Programa de Gestión Multifuncional del CTFC. Su investigación se centra en la modelización de la dinámica vegetal y las relaciones bosque-agua"
+      talk: "A definir"
+      website: "http://vegmod.ctfc.cat/"
       sites:
-       - name: "website"
-         href: "https://berinfontes.com"
-         text: "berinfontes.com"
-       - name: "twitter"
-         href: "https://twitter.com/fbravo_sfm"
-         text: "@fbravo_sfm"
+
          
     - name: "Elsa Varela"
       company: "CREDA-UPC-IRTA"
       photo: "/img/FotoElsaVarela.jpeg"
-      bio: "Investigadora del Centre de Recerca en Economía i Desenvolupament Agroalimentari, su investigación analiza los aspectos socioeconómicos de los bosques y los sistemas agroforestales mediterráneos"
-      sites:
-       - name: "website"
-         href: "https://berinfontes.com"
-         text: "berinfontes.com"
-       - name: "twitter"
-         href: "https://twitter.com/fbravo_sfm"
-         text: "@fbravo_sfm"
+      bio: "Investigadora en el IRTA y asociada a CREDA desde 2015. Su línea de investigación se centra en la valoración económica de servicios ecosistémicos y externalidades ambientales proporcionados por sistemas forestales y agrarios"
+      talk: "Valoración económica de servicios ecosistémicos: aplicación, resultados y limitaciones en el contexto forestal Mediterráneo"
+      website: "https://www.researchgate.net/profile/Elsa_Varela"
+
+
 
 # Organizing Comitee
   Comite:
     - name: "Aitor Ameztegui"
       company: "Universitat de Lleida"
       photo: "/img/FotoAitorAmeztegui.jpg"
-      bio: "Catedrático de Universidad, Director del Instituto Universitario de Investigación en Gestión Forestal Sostenible. Presidente de la Sociedad Española de Ciencias Forestales. Su investigación se centra en la selvicultura, la dinámica forestal y la modelización del crecimiento y producción forestal "
+      bio: "Docente e Investigador en la Universitat de Lleida, e investigador asociado al Centre de Ciència i Tecnologia Forestal de Catalunya. Coordinador del grupo de trabajo de Modelización Forestal de la Sociedad Española de Ciencias Forestales. Su investigación se centra en la modelización de la dinámica forestal bajo distintos escenarios climáticos y de gestión. Director y Coordinador del Congreso"
+
     - name: "Andrés Bravo-Oviedo"
       company: "Museo Nacional de Ciencias Naturales - CSIC"
-      photo: "/img/FotoAndresBravo.jpg"
-      bio: "Catedrático de Universidad, Director del Instituto Universitario de Investigación en Gestión Forestal Sostenible. Presidente de la Sociedad Española de Ciencias Forestales. Su investigación se centra en la selvicultura, la dinámica forestal y la modelización del crecimiento y producción forestal "
+      photo: "/img/FotoAndresBravo2.jpg"
+      bio: "Científico Titular en el Departamento de Biogeografía y Cambio Global del Museo Nacional de Ciencias Naturales (CSIC).  Co-coordinador del grupo de trabajo de Modelización Forestal de la Sociedad Española de Ciencias Forestales. Su investigación se engloba en tres ejes: gestión forestal en el contexto de sistemas socio-ecológicos, resiliencia y complejidad de sistemas forestales, y modelización de servicios ecosistémicos"
+      
     - name: "Cristina Vega"
       company: "Universitat de Lleida"
       photo: "/img/FotoCristinaVega.jpeg"
-      bio: "Catedrático de Universidad, Director del Instituto Universitario de Investigación en Gestión Forestal Sostenible. Presidente de la Sociedad Española de Ciencias Forestales. Su investigación se centra en la selvicultura, la dinámica forestal y la modelización del crecimiento y producción forestal "
+      bio: "Profesora Titular de Universidad del Departamento de Ingeniería Agroforestal de la Universitat de Lleida. Investigadora Asociada al Centre de Ciència i Tecnologia Forestal de Catalunya. Su investigación se centra en la modelización del riesgo de incendios forestales y la planificación forestal a escala del paisaje"
+
     - name: "Antoni Trasobares"
       company: "Centre de Ciència i Tecnologia Forestal de Catalunya"
       photo: "/img/FotoAntoniTrasobares.jpg"
-      bio: "Catedrático de Universidad, Director del Instituto Universitario de Investigación en Gestión Forestal Sostenible. Presidente de la Sociedad Española de Ciencias Forestales. Su investigación se centra en la selvicultura, la dinámica forestal y la modelización del crecimiento y producción forestal "
+      bio: "Director del Centre de Ciència i Tecnologia Forestal de Catalunya, con amplia experiencia investigadora en la modelización del crecimiento de especies forestales."
+ 
     - name: "Lluís Coll"
       company: "Universitat de Lleida"
       photo: "/img/FotoLluisColl.jpeg"
-      bio: "Catedrático de Universidad, Director del Instituto Universitario de Investigación en Gestión Forestal Sostenible. Presidente de la Sociedad Española de Ciencias Forestales. Su investigación se centra en la selvicultura, la dinámica forestal y la modelización del crecimiento y producción forestal "
+      bio: "Profesor Agregado del Departamento de Ingeniería Agroforestal de la Universitat de Lleida e Investigador Asociado al Centre de Ciència i Tecnologia Forestal de Catalunya. Su investigación se centra en la comprensión del funcionamiento y dinámica del bosque y su aplicación a la gestión forestal."
+ 
     - name: "Assu Planas"
       company: "Centre de Ciència i Tecnologia Forestal de Catalunya"
       photo: "/img/FotoAssuPlanas.jpeg"
-      bio: "Catedrático de Universidad, Director del Instituto Universitario de Investigación en Gestión Forestal Sostenible. Presidente de la Sociedad Española de Ciencias Forestales. Su investigación se centra en la selvicultura, la dinámica forestal y la modelización del crecimiento y producción forestal "
-
+      bio: "Responsable de comunicación del Centre de Ciència i Tecnologia Forestal de Catalunya, con amplia experiencia en la organización de congresos y la elaboración de planes de comunicación de eventos similares."
 
 # Scientific Comitee
   Scicom:
@@ -284,7 +282,7 @@ params:
       photo: "/img/FotoOlallaDiaz.jpeg"
       company: "University of Eastern Finland"
     - name: "Andrea Duane"
-      photo: "/img/FotoAndreaDuane.jpeg"
+      photo: "/img/FotoAndreaDuane.jpg"
       company: "Centre de Ciència i Tecnologia Forestal de Catalunya (CTFC)"
     - name: "Raúl García-Valdés"
       photo: "/img/FotoRaulGarcia.jpeg"
