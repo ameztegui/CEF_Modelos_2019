@@ -277,14 +277,14 @@ hr {
    ========================================================================== */
 .wrapper {
   margin: 0 auto;
-  width: 960px;
+  width: 1000px;
   position: relative;
 }
 .content {
-  padding: 50px 0;
+  padding: 0px 0;
 }
 .content section {
-  padding-top: 50px;
+  padding-top: 80px;
 }
 /* =============================================================================
    BASIC STYLES
@@ -301,7 +301,7 @@ h3 {
   font-size: 4em;
 }
 h4 {
-  font-size: 3em;
+  font-size: 2.5em;
 }
 p {
   font-size: 1.6em;
@@ -332,12 +332,7 @@ nav {
 /* =============================================================================
    HEADER
    ========================================================================== */
-.header {
-  padding: 100px 0 100px;
-  display:block; 
-  width:100%; 
-  text-align: center;
-}
+
 .logo-name {
   margin-bottom: 0;
   font-size: 10em;
@@ -380,8 +375,8 @@ nav {
    ABOUT
    ========================================================================== */
 .about {
-  padding: 19px;
-  margin: 0 -20px 0;
+  padding: 0px 19px 0px;
+  margin: -20px -20px 0;
 }
 .about .row .column {
   width: 46%;
@@ -499,6 +494,8 @@ nav {
     color: #999;
     font-size: 1.8em;
 }
+
+
 .comite-item p {
     font-size: 1.4em;
 }
@@ -508,8 +505,8 @@ nav {
    ========================================================================== */
 .scicom-item {
   position: relative;
-  min-height: 50px;
-  padding-left: 60px;
+  min-height: 65px;
+  padding-left: 80px;
   vertical-align: middle;
   margin-top: 10px;
   border-bottom: 0.5px dashed #e7e7e7;
@@ -520,16 +517,16 @@ nav {
   top: 0;
   left: 0;
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
 }
 
 .scicom-name {
-  font-size: 1.6em;
+  font-size: 1.8em;
 }
 .scicom-company {
     color: #999;
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 .scicom-item p {
     font-size: 1.4em;
@@ -653,8 +650,6 @@ nav {
   .sponsor--link,
   .partner-link {
     width: 95px;
-    height: 95px;
-    line-height: 95px;
   }
   /* contact */
   .control-group-name,
@@ -732,7 +727,10 @@ nav {
     padding: 0;
   }
   .speakers-bio {
-    display: none;
+    font-size: 2.9em;
+  }
+    .speakers-talk {
+    font-size: 2.9em;
   }
 }
 @media only screen and (max-width: 321px) {
@@ -792,6 +790,8 @@ h2{
     color: #8f0202;
     font-size: 3.8em;  
 }
+
+
 /* =============================================================================
    NAVIGATION
    ========================================================================== */
@@ -801,6 +801,13 @@ nav {
 .nav-link {
   color: #8f0202;
 }
+
+nav .wrapper {
+    width: 1300px;
+    text-align:center;
+}
+
+
 .nav-link:active,
 .nav-link:hover,
 .nav-link:focus,
@@ -811,11 +818,13 @@ nav {
    HEADER
    ========================================================================== */
 .header {
-  background-image: url('../img/caratula.png');
-  background-color: #193244;
+  height: 440px;
+  margin-left: 100px;
+  background-image: url('../img/header2.png');
+  background-color: #ffffff;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: contain;
+  background-size: 100%;
 }
 .logo-link,
 .tagline,
@@ -850,9 +859,12 @@ nav {
 .github-link img {
   border: 0;
 }
+
+
 /* =============================================================================
    CONTENT
    ========================================================================== */
+
 .content a {
   color: #8F0202;
 }
@@ -865,7 +877,7 @@ nav {
    ABOUT
    ========================================================================== */
 .about {
-  border: 1px solid #e7e7e7;
+  border: 0px solid #e7e7e7;
   background: #fff;
   border-radius: 4px;
 }
@@ -1073,6 +1085,7 @@ footer .icons img{
   z-index:0;
   background-color: rgba(53,111,159,0.5);
 }
+
 
 
 /* =============================================================================
