@@ -1,0 +1,55 @@
+<h2 style="font-family: 'Sifonn Pro'" class="section-title">{{ .titles.registration }}</h2>
+
+<h4>Fechas a tener en cuenta </h4>
+
+<p>* Envío de resúmenes: <b>15 de septiembre</b>  <br>
+* Aceptación de resúmenes y comunicación formato: <b>1 de octubre </b> <br>
+* Inscripción y pago de la cuota: <b>11 de octubre </b> </p>
+
+<h4>Inscripción </h4>
+
+<p>La inscripción incluye documentación, cafés y comidas durante las jornadas, así como <i>transporte desde Lleida o Barcelona</i> para aquellos que precisen de este servicio. Más adelante daremos instrucciones sobre el procedimiento a seguir. La cuota de inscripción será de: </p>
+
+<p><b>- 120 euros</b> para las/os socias/os de la Sociedad Española de Ciencias Forestales (SECF) <br>
+<b>- 140 euros</b> para no socias/os<br>
+<b>- 80 euros</b> para estudiantes o desempleados/as que acrediten su condición
+
+
+<p>La SECF pone a disposición de estudiantes vinculados a la misma, bien como socios individuales o porque su Universidad o Centro de Investigación sea socio institucional de la SECF, <b>bolsas de viaje</b> por un importe máximo de 50 euros en gastos de transporte debidamente documentados. Dichas bolsas de viaje deben solicitarse a título individual mediante <a href="https://unidisc.csuc.cat/oc-shib/index.php/s/g2hVXkphwx5LxTg" target="_blank">este formulario.</a> </p>
+
+<p>El pago de la cuota se realizará por transferencia bancaria a la cuenta de la Sociedad Española de Ciencias Forestales (CIF G-36174852), IBAN: ES10 1491 0001 2321 1589  9821, TRIODOS BANK, indicando el concepto: “RGTModelos19” y el nombre de la persona inscrita. Posteriormente, se enviará el boletín de inscripción junto a una copia del justificante de transferencia a las siguientes direcciones de correo electrónico:
+</p>
+<p><a href="mailto:modelossecf@gmail.com" target="_blank">modelossecf@gmail.com</a></p>
+<p><a href="mailto:tesoreriasecf@gmail.com" target="_blank">tesoreriasecf@gmail.com</a></p><br>
+
+<p>El boletín de inscripción y la plantilla para los resúmenes podrá descargarse aquí: </p>
+
+<p><a href="https://unidisc.csuc.cat/oc-shib/index.php/s/FGy2KeNiOLcIifs/download" target="_blank">Formulario de inscripción</a> </p>
+<p><a href="https://unidisc.csuc.cat/oc-shib/index.php/s/uyq5Kvq8PxQPHcO" target="_blank">Plantilla de resúmenes</a>  </p><br>
+
+
+
+<h4>Publicación de textos completos </h4>
+<p>Por parte de la SECF se prevé la publicación voluntaria de las comunicaciones presentadas en los Cuadernos de la SECF, previa revisión por el comité científico, en formato electrónico y de libre acceso. Para la publicación en los Cuadernos de la SECF de las comunicaciones voluntarias aceptadas, se deberán seguir las normas de publicación, indicadas en la página web: 
+http://secforestales.org/publicaciones/index.php/cuadernos_secf/about/submissions
+</p>
+
+<h4>Documentación</h4>
+<p>
+<a href="https://unidisc.csuc.cat/oc-shib/index.php/s/q6Q0GC1AzNyNkGT" target="_blank">Primera circular</a> <br>
+<p><a href="https://unidisc.csuc.cat/oc-shib/index.php/s/FGy2KeNiOLcIifs/download" target="_blank">Formulario de inscripción</a> </p>
+<a href="https://unidisc.csuc.cat/oc-shib/index.php/s/uyq5Kvq8PxQPHcO" target="_blank">Plantilla de resúmenes</a> <br>
+<a href="https://unidisc.csuc.cat/oc-shib/index.php/s/g2hVXkphwx5LxTg" target="_blank">Solicitud de bolsa de viaje</a></p>
+
+
+<h2 style="font-family: 'Sifonn Pro'" class="section-title">{{ .titles.sponsors }}</h2>
+
+<ul class="sponsors-list">
+{{ range $sponsor := .sponsors }}
+  <li class="sponsor-item" itemscope itemtype="http://schema.org/Organization">
+    <a href="{{ .url }}" class="sponsor--link" itemprop="url" target="_blank">
+      <img src="{{ .logo }}" alt="{{ .name }}" class="photo" itemprop="image">
+    </a>
+  </li>
+{{ end }}
+</ul>

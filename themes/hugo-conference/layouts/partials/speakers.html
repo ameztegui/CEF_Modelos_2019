@@ -10,10 +10,9 @@
     </span>
   {{ end }}
 
-   <h3 class="speakers-name">{{ .name }}
-  {{ with .link }}
-    <a href="{{ .href }}" target="_blank" title="{{ .text }}"> {{ .text }} </a>
-  {{ end }}
+   <h3 class="speakers-name">
+    <a href="{{ .website }}" target="_blank" title="{{ .website }}"> {{ .name }} </a> 
+     
   </h3>
   
    <h3 class="speakers-company">{{ .company }}
@@ -21,13 +20,15 @@
     <a href="{{ .href }}" target="_blank" title="{{ .text }}"> {{ .text }} </a>
   {{ end }}
   </h3>
-  <p class="speakers-bio">{{ .bio }}</p>
-  <p class="speakers-sites">
+  <div class="speakers-sites">
   <!--Links:-->
   {{ range $sites := .sites }}
-    {{ .name }}: <a href="{{ .href }}" target="_blank" title="{{ .text }}"> {{ .text }} </a><br>
+  <a href="{{ .href }}" target="_blank" title="{{ .text }}"> {{ .text }} </a><br>
   {{ end }}
-  </p>
+</div>
+
+  <p class="speakers-bio">{{ .bio }}</p>
+    <p class="speakers-talk"><b>Título de la ponencia: </b>{{ .talk }}</p>
   </li>
 
 

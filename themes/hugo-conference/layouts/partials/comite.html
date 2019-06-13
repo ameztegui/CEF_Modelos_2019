@@ -21,7 +21,7 @@
     <a href="{{ .href }}" target="_blank" title="{{ .text }}"> {{ .text }} </a>
   {{ end }}
   </h3>
-  <p class="comite-bio">{{ .bio }}</p>
+  <p class="comite-bio" style="font size:2em">{{ .bio }}</p>
   <p class="comite-sites">
   <!--Links:-->
   {{ range $sites := .sites }}
@@ -33,7 +33,8 @@
 
 {{ end }}
 
-
+<br>
+<br>
 </ul>
 
 <h2 style="font-family: 'Sifonn Pro'" class="section-title">{{ "Comité científico" }}</h2>
