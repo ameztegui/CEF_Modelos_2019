@@ -184,7 +184,7 @@ params:
       company: "Universidad de Valladolid"
       photo: "/img/FotoFelipeBravo.jpeg"
       bio: "Catedrático de Universidad, Director del Instituto Universitario de Investigación en Gestión Forestal Sostenible. Presidente de la Sociedad Española de Ciencias Forestales. Su investigación se centra en la selvicultura, la dinámica forestal y la modelización del crecimiento y producción forestal "
-      talk: "A definir"
+      talk: "Modelización Forestal. Un paseo del rodal al paisaje para tomar decisiones informadas comprendiendo la dinámica forestal"
       website: "http://sostenible.palencia.uva.es/users/fbravo"
       sites:
        - name: "@fbravo_sfm"
