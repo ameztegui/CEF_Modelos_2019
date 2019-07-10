@@ -111,8 +111,7 @@ params:
       company: "INIA"
       photo: "img/FotoRafaCalama.jpeg"
       presentation:
-        title: "Título a definir"
-        description: "Resumen a definir"
+        title: "¿Realmente necesitamos herramientas estadísticas tan complejas para construir modelos empíricos de apoyo a la gestión forestal?"
         time: "15h00"
  
     - name: "Presentaciones orales"
@@ -134,8 +133,7 @@ params:
       company: "CTFC"
       photo: "img/FotoMiqueldeCaceres.jpeg"
       presentation:
-        title: "Ponencia sesión III"
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+        title: "Modelización ecohidrológica en el bosque mediterráneo: escalas, procesos y retos"
         time: "9h00"
 
     - name: "Presentaciones orales"
@@ -206,7 +204,7 @@ params:
       company: "Instituto Nacional de Investigaciones Agrarias"
       photo: "/img/FotoRafaCalama.jpeg"
       bio: "Científico Titular en el Departamento de Dinámica y Gestión Forestal del INIA-CIFOR, y profesor invitado de Modelización forestal en la Universidad de Valladolid. Especialista en modelización y gestión forestal. Su principal línea de investigación se centra en la modelización de los diferentes procesos asociados con la dinámica de los bosques Mediterráneos"
-      talk: " A definir"
+      talk: "¿Realmente necesitamos herramientas estadísticas tan complejas para construir modelos empíricos de apoyo a la gestión forestal?"
       website: "http://sostenible.palencia.uva.es/users/rcalama"
       sites:
        - name: "twitter"
@@ -218,7 +216,7 @@ params:
       company: "Centre de Ciència i Tecnologia Forestal de Catalunya (CTFC)"
       photo: "/img/FotoMiqueldeCaceres.jpeg"
       bio: "Investigador del CTFC, responsable del grupo de Modelización de la Vegetación y adjunto a la dirección del Programa de Gestión Multifuncional del CTFC. Su investigación se centra en la modelización de la dinámica vegetal y las relaciones bosque-agua"
-      talk: "A definir"
+      talk: "Modelización ecohidrológica en el bosque mediterráneo: escalas, procesos y retos"
       website: "http://vegmod.ctfc.cat/"
       sites:
 
