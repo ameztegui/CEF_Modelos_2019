@@ -1,5 +1,5 @@
 baseurl: "/"
-title: "Modelizacion Forestal SECF"
+title: 
 canonifyurls: true
 theme: "hugo-conference"
 name: "Modelizacion Forestal SECF"
@@ -10,14 +10,16 @@ params:
   # Conference info
   Name: "Modelizacion Forestal SECF"
   #Description: "Conference description"
-  #Date: "November 15"
+  Date: "November 6 and 7"
   #Price: "Only $100" # If your event is free, just comment this line
-  #Venue: "Coco Bongo"
+  Venue: "CTFC"
   #Address: "Boulevard Kukulcan, 30"
-  #City:  "CancÃºn"
+  City:  "Solsona"
   #State: "Quintana"
   #Images: ["/img/badge.jpg"]
   #GoogleMapsKey: "my-secret-maps-key"
+  tags: ["modelos", "forestal", "SECF", "Solsona", "modelizacion"]
+
 
   # Active sections on the website to deactivate comment out with '#'
   # you can also change order here and it will reflect on page

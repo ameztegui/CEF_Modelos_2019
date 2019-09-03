@@ -825,6 +825,7 @@ nav .wrapper {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
+  font-size: 0px;
 }
 .logo-link,
 .tagline,
