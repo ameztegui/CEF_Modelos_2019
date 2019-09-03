@@ -3,7 +3,7 @@ license = "MIT"
 licenselink = "https://github.com/jweslley/hugo-conference/blob/master/LICENSE"
 description = "The easiest way to create websites for conference/events"
 homepage = "https://github.com/jweslley/hugo-conference/"
-tags = ["conference", "responsive", "l10n", "google-analytics"]
+keywords = ["conference", "responsive", "l10n", "google-analytics"]
 features = ["conference", "responsive", "l10n", "google-analytics"]
 min_version = "0.21"
 

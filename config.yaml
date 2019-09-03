@@ -4,7 +4,6 @@ canonifyurls: true
 theme: "hugo-conference"
 name: "Modelizacion Forestal SECF"
 GoogleAnalytics: ""
-tags: ["modelos", "forestal", "SECF", "Solsona", "modelizacion"]
 
 params:
   # Conference info
@@ -18,7 +17,7 @@ params:
   #State: "Quintana"
   #Images: ["/img/badge.jpg"]
   #GoogleMapsKey: "my-secret-maps-key"
-  tags: ["modelos", "forestal", "SECF", "Solsona", "modelizacion"]
+  keywords: "modelos, forestal, SECF, Solsona, modelizacion"
 
 
 
