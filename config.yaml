@@ -4,6 +4,7 @@ canonifyurls: true
 theme: "hugo-conference"
 name: "Modelizacion Forestal SECF"
 GoogleAnalytics: ""
+tags: ["modelos", "forestal", "SECF", "Solsona", "modelizacion"]
 
 params:
   # Conference info
