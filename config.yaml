@@ -8,8 +8,8 @@ tags: ["modelos", "forestal", "SECF", "Solsona", "modelizacion"]
 
 params:
   # Conference info
-  Name: "Modelizacion Forestal SECF"
-  #Description: "Conference description"
+  Name: "Modelizacion Forestal SECF Solsona 2019"
+  Description: "Sitio web de la V Reunion del GT de Modelizacion Forestal"
   Date: "November 6 and 7"
   #Price: "Only $100" # If your event is free, just comment this line
   Venue: "CTFC"
