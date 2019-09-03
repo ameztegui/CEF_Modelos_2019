@@ -1,23 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Modelizacion Forestal SECF</title>
-    <link>/</link>
-    <description>Recent content on Modelizacion Forestal SECF</description>
+    <title>R on Modelizacion Forestal SECF</title>
+    <link>/categories/r/</link>
+    <description>Recent content in R on Modelizacion Forestal SECF</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 28 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>hjmg</title>
-      <link>/post/hjmg/</link>
-      <pubDate>Thu, 28 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/hjmg/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Hello R Markdown</title>
