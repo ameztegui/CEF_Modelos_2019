@@ -762,6 +762,7 @@ nav {
 html {
   background: #FFFFFF;
   font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
   font-size: 11px;
   color: #777;
 }
