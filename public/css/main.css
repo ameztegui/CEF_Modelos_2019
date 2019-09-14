@@ -762,7 +762,6 @@ nav {
 html {
   background: #FFFFFF;
   font-family: 'Montserrat', sans-serif;
-  font-weight: lighter;
   font-size: 11px;
   color: #777;
 }
@@ -868,6 +867,8 @@ nav .wrapper {
 
 .content a {
   color: #8F0202;
+      font-weight: bolder;
+
 }
 .content a:hover,
 .content a:focus {

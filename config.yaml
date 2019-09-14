@@ -42,7 +42,7 @@ params:
     comite: "Comité Organizador y Científico"
     sponsors: "Colaboran"
     #partners: "Colaboradores"
-    registration: "Inscripción y documentación"
+    registration: "Inscripción y envío de resúmenes"
 
   # List of Sponsors
   Sponsors:
