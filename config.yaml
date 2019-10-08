@@ -84,61 +84,65 @@ params:
         title: "Modelización Forestal. Un paseo del rodal al paisaje para tomar decisiones informadas comprendiendo la dinámica forestal"
         description: "Resumen a venir"
         time: "9h30"    
-    
-    - sesion: "Sesion I"
-      description: "Modelización de la dinámica forestal y la distribución de especies en un contexto de cambio global"
-    - name: "Presentaciones orales"
-      time: "10h00"  
-      description: "Sesión I"
-    - name: "Pausa Café"
-      coffee: "Break"
-      time: "11h30"  
-
-    - name: "Nuria Aquilué"
-      company: "UQAM-CTFC"
-      photo: "img/FotoNuriaAquilue.jpeg"
-      presentation:
-        title: "Modelizando el futuro de los paisajes forestales Mediterráneos: El reto de la integración"
-        time: "12h00"
-    - name: "Presentaciones orales"
-      time: "12h30"  
-      description: "Sesión I"
-
-    - name: "Comida"
-      time: "13h30"  
-      
+        
     - sesion: "Sesion II"
       description: "Modelización del crecimiento y la productividad forestal: nuevas técnicas y herramientas" 
+    - name: "Presentaciones orales"
+      time: "10h00"  
+      description: "Sesión I"   
+      
+    - name: "Pausa Café"
+      coffee: "Break"
+      time: "11h00"  
       
     - name: "Rafael Calama"
       company: "INIA"
       photo: "img/FotoRafaCalama.jpeg"
       presentation:
         title: "¿Realmente necesitamos herramientas estadísticas tan complejas para construir modelos empíricos de apoyo a la gestión forestal?"
-        time: "15h00"
- 
+        time: "11h30"
+        
     - name: "Presentaciones orales"
-      time: "15h30" 
-      description: "Sesión II"
+      time: "12h00"  
+      description: "Sesión I (cont.)"
+   
+    - name: "Comida"
+      time: "13h30"  
+  
+    - sesion: "Sesion II"
+      description: "Modelización de la dinámica forestal y la distribución de especies en un contexto de cambio global"
 
-    - name: "Pausa-café"
-      time: "17h00" 
+    - name: "Nuria Aquilué"
+      company: "UQAM-CTFC"
+      photo: "img/FotoNuriaAquilue.jpeg"
+      presentation:
+        title: "Modelizando el futuro de los paisajes forestales Mediterráneos: El reto de la integración"
+        time: "15h00"
+        
+    - name: "Presentaciones orales"
+      time: "15h30"  
+      description: "Sesión II"
+    
+    - name: "Pausa"
+      time: "16h40" 
       
-    - name: "Presentaciones breves/Sesión de posters"
-      time: "17h30" 
+    - name: "Presentaciones orales"
+      time: "17h00"
+      description: "Sesión II"
+      
       
   ScheduleDay2:
-
+  
     - sesion: "Sesion III"
-      description: "Modelización de procesos ecológicos e interacciones bosque-agua" 
-          
-    - name: "Miquel de Caceres"
-      company: "CTFC"
-      photo: "img/FotoMiqueldeCaceres.jpeg"
+      description: "Cuantificación, valoración y optimización de servicios ecosistémicos" 
+               
+    - name: "Elsa Varela"
+      photo: "/img/FotoElsaVarela.jpeg"
+      company: "CREDA-UPC-IRTA"
       presentation:
-        title: "Modelización ecohidrológica en el bosque mediterráneo: escalas, procesos y retos"
+        title: "Valoración económica de servicios ecosistémicos: aplicación, resultados y limitaciones en el contexto forestal Mediterráneo"
         time: "9h00"
-
+        
     - name: "Presentaciones orales"
       time: "9h30" 
       description: "Sesión III"
@@ -149,35 +153,38 @@ params:
     - name: "Presentaciones orales"
       time: "11h30" 
       description: "Sesión III (cont.)"
-
-    - name: "Presentaciones breves/Sesión de posters"
-      time: "12:30" 
-      description: 
-    
+      
+    - name: "Taller participativo"
+      time: "12:45" 
+      description:   
+     
     - name: "Comida"
       time: "13h30"   
- 
- 
+      
     - sesion: "Sesion IV"
-      description: "Cuantificación, valoración y optimización de servicios ecosistémicos" 
-               
-    - name: "Elsa Varela"
-      photo: "/img/FotoElsaVarela.jpeg"
-      company: "CREDA-UPC-IRTA"
+      description: "Modelización de procesos ecológicos e interacciones bosque-agua" 
+          
+    - name: "Miquel de Caceres"
+      company: "CTFC"
+      photo: "img/FotoMiqueldeCaceres.jpeg"
       presentation:
-        title: "Valoración económica de servicios ecosistémicos: aplicación, resultados y limitaciones en el contexto forestal Mediterráneo"
+        title: "Modelización ecohidrológica en el bosque mediterráneo: escalas, procesos y retos"
         time: "15h00"
-        
+   
     - name: "Presentaciones orales"
-      time: "15h30" 
-      description: "Sesión IV "
-
-    - name: "Pausa-café"
+      time: "15h30"  
+      description: "Sesión IV"
+    
+    - name: "Pausa"
+      time: "16h40" 
+      
+    - name: "Presentaciones orales"
       time: "17h00"
-
-    - name: "Mesa redonda"
-      time: "17h30" 
-      description: "Mesa redonda, conclusiones y clausura de las jornadas"
+      description: "Sesión IV (cont.)"
+      
+    - name: "Clausura"
+      time: "17h45" 
+      description: "Conclusiones y clausura de las jornadas"
 
 # List of Speakers
   Speakers:
