@@ -85,12 +85,30 @@ params:
         description: "Resumen a venir"
         time: "9h30"    
         
-    - sesion: "Sesion II"
-      description: "Modelización del crecimiento y la productividad forestal: nuevas técnicas y herramientas" 
-    - name: "Presentaciones orales"
-      time: "10h00"  
-      description: "Sesión I"   
+    - sesion: "Sesion I"
+      description: "Modelización del crecimiento y la productividad forestal: nuevas técnicas y herramientas"
       
+    - name: "Rafael Alonso"
+      company: "föra forest technologies"
+      presentation:
+        title: "Análisis masivo de modelos altura-diámetro en España: una aproximación al small data forestal" 
+        time: "10h00"    
+    - name: "Jessica Esteban"
+      company: "Agresta Soc. Coop"
+      presentation:
+        title: "Aplicación de random forests y técnicas bootstrap para la estimación del volumen y su incertidumbre" 
+        time: "10h15"  
+    - name: "Juan A. Molina"
+      company: "Universidad de Santiago de Compostela"
+      presentation:
+        title: "Obtención de métricas relacionadas con variables dasométricas de altura en masas maduras de Pinus sylvestris a partir de un único escaneo de TLS" 
+        time: "10h30"    
+    - name: "Eduardo Velázquez"
+      company: "iuFor-Universidad de Valladolid"
+      presentation:
+        title: "Predicción de la biomasa acumulada y el carbono fijado durante la recuperación de la cubierta vegetal en campos abandonados a partir de imágenes de satélite" 
+        time: "10h45"    
+    
     - name: "Pausa Café"
       coffee: "Break"
       time: "11h00"  
@@ -102,10 +120,48 @@ params:
         title: "¿Realmente necesitamos herramientas estadísticas tan complejas para construir modelos empíricos de apoyo a la gestión forestal?"
         time: "11h30"
         
-    - name: "Presentaciones orales"
-      time: "12h00"  
-      description: "Sesión I (cont.)"
-   
+    - name: "Marcos Barrio Anta"
+      company: "Universidad de Oviedo"
+      presentation:
+        title: "Integración de las bases de datos del inventario forestal nacional y de la cobertura PNOA-LiDAR para la estimación del crecimiento y producción forestal en el noroeste de España" 
+        time: "12h00"   
+    - name: "Iñigo Lizarralde"
+      company: "föra forest technologies"
+      presentation:
+        title: "MySustainableForest: desarrollo de modelos para la gestión forestal sostenible con datos LiDAR, satélite y de calidad 
+de la madera" 
+        time: "12h15"  
+    - name: "María Menéndez-Miguélez"
+      company: "INIA-CIFOR"
+      presentation:
+        title: "Nueva metodología para la estimación de biomasa en funciones alométricas utilizando distintas fuentes de datos" 
+        time: "12h30" 
+    - name: "Sonia Condés"
+      company: "Universidad Politécnica de Madrid"
+      presentation:
+        title: "Dinámica de las distribuciones diamétricas en masas mixtas " 
+        time: "12h45" 
+    - name: "Francisco Rodríguez"
+      company: "föra forest technologies"
+      presentation:
+        title: "Dendroflexómetro 2.0: App Android para la toma y procesado de datos procedentes de inventario angular" 
+        time: "13h00" 
+    - name: "Rafael Calama"
+      company: "INIA-CIFOR"
+      presentation:
+        title: "Metodología para la estimación del crecimiento anual en biomasa en repoblaciones jóvenes" 
+        time: "13h05" 
+    - name: "Alfonso Jurado Varela"
+      company: "Junta de Extremadura"
+      presentation:
+        title: "Modelización del crecimiento de las masas de pinar para la actualización de los inventarios LiDAR en Extremadura " 
+        time: "13h10" 
+    - name: "Fernando Pérez-Rodríguez"
+      company: "föra forest technologies"
+      presentation:
+        title: "förecast©: la revolución digital llega a tu bosque" 
+        time: "13h15" 
+        
     - name: "Comida"
       time: "13h30"  
   
@@ -119,17 +175,68 @@ params:
         title: "Modelizando el futuro de los paisajes forestales Mediterráneos: El reto de la integración"
         time: "15h00"
         
-    - name: "Presentaciones orales"
-      time: "15h30"  
-      description: "Sesión II"
-    
-    - name: "Pausa"
-      time: "16h40" 
+    - name: "Raúl García-Valdés"
+      company: "CREAF"
+      presentation:
+        title: "Combining niche and process-based models to project climate change impacts on forest productivity" 
+        time: "15h30" 
+    - name: "Iris P. Monfort-Bagué"
+      company: ""
+      presentation:
+        title: "Tree regeneration after wind disturbance in a temperate mixed forest" 
+        time: "15h45" 
+    - name: "Javier de Dios García"
+      company: ""
+      presentation:
+        title: "Crecimiento y dinámica en masas mixtas de Pinus pinea. Nuevas aproximaciones ante el cambio global" 
+        time: "16h00" 
+    - name: "Greta Carrete-Vega"
+      company: "Vizzuality"
+      presentation:
+        title: "Global Forest Climate Service: Datos globales y modelos de distribución de especies para el sector forestal en el contexto de la crisis climática " 
+        time: "16h05" 
+    - name: "Pere J. Gelabert"
+      company: "Universitat de Lleida"
+      presentation:
+        title: "Caracterización de la diversidad estructural forestal en paisajes mediterráneos afectados por incendios usando datos de LiDAR aerotransportado" 
+        time: "16h10" 
+    - name: "Quim Canelles"
+      company: "CTFC"
+      presentation:
+        title: "¿Por qué modelizar las interacciones entre plagas de insectos y otras perturbaciones forestales?" 
+        time: "16h15" 
+
+    - name: "Pausa café"
+      time: "16h20" 
       
-    - name: "Presentaciones orales"
-      time: "17h00"
-      description: "Sesión II"
+    - name: "María Suárez-Muñoz"
+      company: "Universidad de Granada"
+      presentation:
+        title: "Simulación de la dinámica poblacional de la procesionaria del pino mediante la modelización basada en agentes" 
+        time: "16h45"
+    - name: "Santiago Sabaté"
+      company: "CREAF"
+      presentation:
+        title: "How do we train simulation models from observations? A Bayesian inversion approach" 
+        time: "17h00" 
+    - name: "Adrián Jiménez-Ruano"
+      company: "Universidad de Zaragoza"
+      presentation:
+        title: "Delimitación y caracterización de piro-regiones en la España peninsular" 
+        time: "17h15"
+    - name: "Marta Pardos"
+      company: "INIA-CIFOR"
+      presentation:
+        title: "Dinámica de la regeneración natural en masas mixtas de Pinus pinea-Quercus ilex - Quercus faginea-Juniperus thurifera en la meseta norte: aproximación mediante un modelo de celda  " 
+        time: "17h30"
+
+    - name: "Visita Guiada al Casco histórico"
+      time: "18h30" 
       
+    - name: "Cena del congreso"
+      company: "Restaurante Crisami"
+      presentation:
+        time: "21h15" 
       
   ScheduleDay2:
   
@@ -141,23 +248,77 @@ params:
       company: "CREDA-UPC-IRTA"
       presentation:
         title: "Valoración económica de servicios ecosistémicos: aplicación, resultados y limitaciones en el contexto forestal Mediterráneo"
-        time: "9h00"
-        
-    - name: "Presentaciones orales"
-      time: "9h30" 
-      description: "Sesión III"
+        time: "9h15"
+    - name: "Eduardo Collado"
+      company: "CTFC"
+      presentation:
+        title: "Modelización de las relaciones entre la productividad de las setas, el crecimiento de los árboles y el clima en diferentes biomas forestales europeos" 
+        time: "9h45" 
+    - name: "Valentino Marini Govigli"
+      company: "EFIMED"
+      presentation:
+        title: "Environmental accounting for forestry from earth observation data, insights from Navarra region, Spain" 
+        time: "10h00" 
+    - name: "David Candel-Pérez"
+      company: "Universidad Pública de Navarra"
+      presentation:
+        title: "Calculadora de sostenibilidad (First-Heat Navarra): generando energía sostenible al reducir el riesgo de incendios forestales en comunidades rurales" 
+        time: "10h15" 
+    - name: "Alba Márquez"
+      company: "BC3 - Basque Centre for Climate Change"
+      presentation:
+        title: "Nuevo enfoque en el estudio de los servicios ecosistémicos forestales en el contexto del proyecto ALICE INTERREG Atlantic Area" 
+        time: "10h30" 
+    - name: "Aitor Ameztegui"
+      company: "Universitat de Lleida"
+      presentation:
+        title: "Provisión de servicios ecosistémicos del bosque mediterráneo bajo distintos escenarios climáticos y de gestión" 
+        time: "10h45" 
       
     - name: "Pausa-café"
       time: "11h00" 
       
-    - name: "Presentaciones orales"
-      time: "11h30" 
-      description: "Sesión III (cont.)"
-      
+    - name: "Marcos Rodrigues"
+      company: "Universitat de Lleida"
+      presentation:
+        title: "Predicting risk and economic losses from wildfire in eucalypt plantations hotspot of Western Brazil"
+        time: "11h30" 
+    - name: "Elena Górriz"
+      company: "EFIMED"
+      presentation:
+        title: "Simulación de la introducción de un pago por recolección de setas en tres zonas piloto de Cataluña "
+        time: "11h45" 
+    - name: "Albert Morera"
+      company: "Universitat de Lleida"
+      presentation:
+        title: "Comparativa entre distintas técnicas de modelización estadística y aprendizaje automático supervisado para predecir la producción anual de setas"
+        time: "12h00" 
+    - name: "Andrés Bravo-Oviedo"
+      company: "CSIC"
+      presentation:
+        title: "Estudio del potencial mitigador y productivo de las masas de Pinus pinea y Pinus pinaster de la meseta norte castellana mediante el uso del modelo 3-PG"
+        time: "12h15" 
+    - name: "Eduardo Collado"
+      company: "CTFC"
+      presentation:
+        title: "Análisis del efecto de distintas intensidades de clara sobre la biomasa de los hongos"
+        time: "12h30" 
+    - name: "Valentino Marini Govigli"
+      company: "EFIMED"
+      presentation:
+        title: "Modelling a socio-ecological system: a cellular automata model for the spatial development of sacred forests in Epirus"
+        time: "12h35" 
+    - name: "Jordi García-Gonzalo"
+      company: "CTFC"
+      presentation:
+        title: "Herramientas de simulación y optimización de servicios ecosistémicos"
+        time: "12h40" 
     - name: "Taller participativo"
-      time: "12:45" 
-      description:   
-     
+      company: "Francisco Javier Bonet"
+      presentation:
+         title: "Mejorando la aplicación de los modelos forestales a problemas reales. Una propuesta de trabajo" 
+         time: "12:45" 
+
     - name: "Comida"
       time: "13h30"   
       
@@ -169,22 +330,66 @@ params:
       photo: "img/FotoMiqueldeCaceres.jpeg"
       presentation:
         title: "Modelización ecohidrológica en el bosque mediterráneo: escalas, procesos y retos"
-        time: "15h00"
+        time: "14h45"
    
-    - name: "Presentaciones orales"
-      time: "15h30"  
-      description: "Sesión IV"
+    - name: "Antonio Molina"
+      company: "Universidad Politécnica de Valencia"
+      presentation:
+        title: "Efecto hidrológico de la densificación forestal en cuencas efímeras"
+        time: "15h15" 
+    - name: "Juan A. Blanco"
+      company: "Universidad Pública de Navarra"
+      presentation:
+        title: "La selección del modelo climático es más determinante que el nivel de complejidad ecológica al estimar las reservas de carbono en pinares pirenaicos"
+        time: "15h30"
+    - name: "Javier Vázquez Piqué"
+      company: "Universidad de Huelva"
+      presentation:
+        title: "Trade-off entre crecimiento secundario y producción de piña en pino piñonero: un análisis mediante modelos mixtos bivariantes"
+        time: "15h45" 
+    - name: "Josu G. Alday"
+      company: "Universitat de Lleida"
+      presentation:
+        title: "Dendrosync: un conjunto de herramientas estadísticas para el cálculo de la sincronía espacial entre cronologías de anillos de árboles"
+        time: "16h00" 
+    - name: "Irene Adamo"
+      company: "Universitat de Lleida"
+      presentation:
+        title: "Modelos “random forest” para el análisis de la diversidad fúngica en ecosistemas forestales mediterráneos"
+        time: "16h05" 
+    - name: "Juncal Espinosa"
+      company: "INIA-CIFOR"
+      presentation:
+        title: "Análisis del efecto del tratamiento de quema prescrita en la biomasa de desfronde a través de un enfoque bayesiano"
+        time: "16h10" 
+    - name: "Cristina Vega"
+      company: "Universitat de Lleida"
+      presentation:
+        title: "A data mining approach to local landscape and stand variables related to plant diversity in Mediterranean forests"
+        time: "16h15" 
     
     - name: "Pausa"
-      time: "16h40" 
+      time: "16h20" 
       
-    - name: "Presentaciones orales"
-      time: "17h00"
-      description: "Sesión IV (cont.)"
+    - name: "Daniel Moreno Fernández"
+      company: "INIA-CIFOR"
+      presentation:
+        title: "¿Es posible modelizar la dinámica de la madera muerta?"
+        time: "16h40"
+    - name: "Jordi Voltas"
+      company: "Universitat de Lleida"
+      presentation:
+        title: "Dinámica reproductiva y potenciales compromisos con el crecimiento radial en pino piñonero"
+        time: "16h55" 
+    - name: "Antoine Cabon"
+      company: "CTFC"
+      presentation:
+        title: "Mechanistic modelling of tree growth responses to temperature and water availability: lessons from monitoring intra-annual cambial activity along a subalpine elevational gradient"
+        time: "17h10" 
       
     - name: "Clausura"
-      time: "17h45" 
-      description: "Conclusiones y clausura de las jornadas"
+      time: "17h25" 
+      description: "Cierre de la reunión"
 
 # List of Speakers
   Speakers:
